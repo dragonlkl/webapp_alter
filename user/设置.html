@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>设置</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/connom.css" />
+<style>
+	.mui-badge.pull-alter{font-size: 14px;color: #939BA9;background: none;}
+	.mui-table-view-cell{padding: 11.5px 15px;}
+	.mui-navigate-right.pull-alter .mui-badge{margin-right: -20px;}
+	.mui-navigate-right.pull-alter:after{right: 0;content: '';}
+	.mui-navigate-right.pull-alter .text{margin-top:20px;display: inline-block;}
+	.mui-table-view{margin-bottom: 10px;}
+	.mui-table-view:before{background-color:transparent;}
+	.mui-table-view-cell:after{left:0;}
+	.user-img{width: 60px;height: 60px;float: right;}
+	.user-img img{display: block;border-radius:60px;width: 60px;height: 60px;}
+	.mui-navigate-right .mui-switch.pull-alter{
+		margin-right: -16px;
+	}
+	.user-exit-btn{margin-top: 40px;}
+	.user-exit-btn .button{width: 100%;font-size: 14px;color: #FF5858;display: block;line-height: 50px;text-align: center;background: #fff;}
+	</style>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav pull-height">
+	<a href="javascript:history.back(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<h1 class="mui-title">设置</h1>
+</header>
+<div class="mui-content">
+	<ul class="mui-table-view">
+		<li class="mui-table-view-cell">
+			<a href="修改密码.html" class="mui-navigate-right">
+				修改密码
+			</a>
+		</li>
+		<li class="mui-table-view-cell">
+			<a class="mui-navigate-right">
+				清除缓存
+				<span class="mui-badge pull-alter">50M</span>
+			</a>
+		</li>
+		<li class="mui-table-view-cell">
+			<a class="mui-navigate-right pull-alter">
+				允许系统消息通知
+				<!-- <span class="mui-badge pull-alter">20岁</span> -->
+				<div class="mui-switch pull-alter">
+  					<div class="mui-switch-handle"></div>
+				</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell">
+			<a href="关于校园创客.html" class="mui-navigate-right">
+				关于校园创客
+			</a>
+		</li>
+	</ul>
+	<div class="user-exit-btn"><a href="登录.html" class="button">退出账号</a></div>
+</div>
+<script src="../js/mui.min.js"></script>
+<script>
+	mui.init({
+		swipeBack: false
+	});
+</script>
+</body>
+</html>

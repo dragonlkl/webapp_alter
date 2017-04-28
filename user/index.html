@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>首页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/connom.css" />
+	<link rel="stylesheet" href="css/index.css" />
+	<style>
+		.news_scrollNews{height: 25px;overflow: hidden;font-size: 12px;
+    color: #2C3E4D;}
+		.news_scrollNews .hot-news_list li{line-height: 29px;}
+	</style>
+</head>
+<body>
+<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+	<div class="mui-inner-wrap">
+		<!--侧滑菜单部分-->
+		<aside id="offCanvasSide" class="mui-off-canvas-left pull-color">
+			<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<div class="my-user-header">
+						<div class="my-gear-info">
+							<a href="设置.html" class="mui-icon mui-icon-gear mui-pull-left"></a>
+							<a href="基本信息.html" class="mui-icon mui-pull-right pull-border">编辑</a>
+						</div>
+						<div class="my-head-img mui-clearfix">
+							<span class="my-img"><img src="images/user-img.png" alt="用户头像" /></span>
+							<div class="my-person-info">
+								<span>冯海燕</span>
+							</div>
+						</div>
+					</div>
+					<div class="my-content">
+						<ul class="in-list">
+							<li><a href="我的收藏.html" class="icon-size icon-sc">收藏</a></li>
+							<li><a href="我的项目.html" class="icon-size icon-xm">我的项目</a></li>
+							<li class="pull-border"><a href="购买的课程.html" class="icon-size icon-kc">购买的课程</a></li>
+							<li><a href="我的简历.html" class="icon-size icon-jl">我的简历</a></li>
+							<li><a href="投递记录.html" class="icon-size icon-zw">投递的职位</a></li>
+							<li class="pull-border"><a href="申请的约谈.html" class="icon-size icon-yt">申请的约谈</a></li>
+							<li><a href="消息.html" class="icon-size icon-xx">消息<em></em></a></li>
+							<li><a href="反馈.html" class="icon-size icon-fk">反馈</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</aside>
+		<!--主界面部分-->
+		<header class="mui-bar mui-bar-nav pull-height">
+			<a href="#offCanvasSide" class="mui-icon mui-icon-contact mui-pull-left"></a>
+			<a href="../教育/搜索.html" class="mui-icon mui-icon mui-icon-search mui-pull-right"></a>
+			<div class="slide-sireNav">
+				<ul class="sireNav-list mui-clearfix" id="sireNav-list">
+					<li><a href="index.html" class="on">首页</a></li>
+					<li><a href="../教育/index.html">教育</a></li>
+					<li><a href="../就业/index.html">就业</a></li>
+					<li><a href="../创业/index.html">创业</a></li>
+				</ul>
+			</div>
+		</header>
+		
+		<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<div class="content">
+					<div id="slider" class="mui-slider" >
+						<div class="mui-slider-group mui-slider-loop">
+							<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+							<div class="mui-slider-item mui-slider-item-duplicate">
+								<a href="#">
+									<img src="../images/yuantiao.jpg">
+								</a>
+							</div>
+							<!-- 第一张 -->
+							<div class="mui-slider-item">
+								<a href="#">
+									<img src="../images/shuijiao.jpg">
+								</a>
+							</div>
+							<!-- 第二张 -->
+							<div class="mui-slider-item">
+								<a href="#">
+									<img src="../images/muwu.jpg">
+								</a>
+							</div>
+							<!-- 第三张 -->
+							<div class="mui-slider-item">
+								<a href="#">
+									<img src="../images/cbd.jpg">
+								</a>
+							</div>
+							<!-- 第四张 -->
+							<div class="mui-slider-item">
+								<a href="#">
+									<img src="../images/yuantiao.jpg">
+								</a>
+							</div>
+							<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+							<div class="mui-slider-item mui-slider-item-duplicate">
+								<a href="#">
+									<img src="../images/shuijiao.jpg">
+								</a>
+							</div>
+						</div>
+						<div class="mui-slider-indicator">
+							<div class="mui-indicator mui-active"></div>
+							<div class="mui-indicator"></div>
+							<div class="mui-indicator"></div>
+							<div class="mui-indicator"></div>
+						</div>
+					</div>
+					
+				<div class="slider-item">
+					<ul class="mui-row table-view mui-clearfix">
+						<li class="mui-col-xs-3 table-view-cell">
+							<a href="万讯新闻.html">
+								<span class="icon-1"></span>
+								万讯新闻
+							</a>
+						</li>
+						<li class="mui-col-xs-3 table-view-cell">
+							<a href="校园通知.html">
+								<span class="icon-2"></span>
+								校园通知
+							</a>
+						</li>
+						<li class="mui-col-xs-3 table-view-cell">
+							<a href="赚点外快.html">
+								<span class="icon-3"></span>
+								赚点外快
+							</a>
+						</li>
+						<li class="mui-col-xs-3 table-view-cell">
+							<a href="一起约吧.html">
+								<span class="icon-4"></span>
+								一起约吧
+							</a>
+						</li>
+					</ul>
+				</div>
+			
+			
+			<div class="item hot-news">
+                <span><img src="images/Headlines.png" alt=""></span>
+                <div class="news_scrollNews">
+	                <ul class="hot-news_list"> 
+						<li>1甜美宽松毛衣今秋一定红</li> 
+						<li>2秋装百搭小马甲不到50元</li> 
+						<li>3修身韩版小西装万人疯</li> 
+						<li>4夏末雪纺店主含泪大甩卖</li> 
+						<li>5瑞丽都疯狂推荐的秋装</li> 
+						<li>6元长款针织小开衫卖疯啦</li> 
+					</ul>
+				</div>
+            </div>
+            <div class="item hot-news">
+                <span><img src="images/Headlines.png" alt=""></span>
+                <h2>新老教师传帮带 举办新学年师徒结对拜师仪式举办新学年师徒结对拜师仪式举办新学年师徒结对拜师仪式举办新学年师徒结对拜师仪式举办新学年师徒结对拜师仪式</h2>
+            </div>
+
+
+            <div class="item-content pull-bot mui-clearfix">
+                <ul class="menu-lists mui-clearfix">
+                    <li class="view-cell">
+                    	<a href="合作院校.html">
+                    		<span>8+</span>
+                    		<div class="media-body">合作院校</div>
+                    	</a>
+                    </li>
+                    <li class="view-cell">
+                    	<a href="合作企业.html">
+                    		<span>798+</span>
+                    		<div class="media-body">合作企业</div>
+                    	</a>
+                    </li>
+                    <li class="view-cell">
+                    	<a href="孵化基地.html">
+                    		<span>78899+</span>
+                    		<div class="media-body">孵化基地</div>
+                    	</a>
+                    </li>
+                </ul>
+                <div class="arrow2-block mui-clearfix">
+                    <a href="校园微电影.html">
+                        <div class="MicroFilm-text">
+                            <span>校园微电影</span>
+                            <p>Campus micro movie</p>
+                        </div>
+                        <span class="arrow2-btn"></span>
+                        <div class="MicroFilm"></div>
+                    </a>     
+                </div>
+            </div>
+            <div class="item-content pull-bot">
+                <h2 class="news-title active">万讯新闻<a href="万讯新闻.html">更多</a></h2>
+               <ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<a href="万讯新闻.html" class="">
+						<img class="mui-media-object mui-pull-right" src="../images/yuantiao.jpg">
+						<div class="mui-media-body">
+							寒冬送温暖 高新区社发局领导赴石家庄54中慰问贫困生
+							<p class="mui-h6 pull-right mui-ellipsis">588评论<span class="em">12:58</span></p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="万讯新闻.html">
+						<img class="mui-media-object mui-pull-right pull-size" src="../images/shuijiao.jpg">
+						<div class="mui-media-body">
+							寒冬送温暖 高新区社发局领导赴石家庄54中慰问贫困生
+							<p class="mui-h6 pull-right mui-ellipsis">588评论<span class="em">12:58</span></p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="万讯新闻.html">
+						<img class="mui-media-object mui-pull-right" src="../images/muwu.jpg">
+						<div class="mui-media-body">
+							寒冬送温暖 高新区社发局领导赴石家庄54中慰问贫困生
+							<p class="mui-h6 pull-right mui-ellipsis">588评论<span class="em">12:58</span></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+            </div>
+            <div class="item-content pull-bot pull-padd">
+                <h2 class="news-title">校园女神天地<a href="#">更多</a></h2>
+                <div class="item-media-block">
+                	<img class="mui-media-object" src="../images/shuijiao.jpg">
+			        <div class="media-body">
+						<a href="javascript:;">
+							<div class="media-img"><img src="../images/muwu.jpg"></div>
+							<div class="mui-media-body">
+								<span class="text">罗丽珍</span>
+								<p class="mui-h6 mui-ellipsis">江门职业技术学院<span class="em">3294人正在观看</span></p>
+							</div>
+						</a>
+			        </div>
+			        <span class="pos-msg">正在直播</span>
+                </div>
+            </div>
+
+            <div class="item-row">
+                <span class="row-text">万讯明星天地图片</span>
+            </div>
+
+            <div class="item-content pull-padd">
+                <h2 class="news-title">校园女神天地<a href="#">更多</a></h2>
+                <div class="item-media-block">
+                	<img class="mui-media-object" src="../images/shuijiao.jpg">
+			        <div class="media-body">本校1978年元老级师姐生日party</div>
+			        <span class="pos-msg">进行中</span>
+                </div>
+            </div>
+
+            <div class="pull-arrow">
+                <p class="text">帮助与反馈</p>
+                <p>您的建议是我们成长的动力</p>
+            </div>
+
+		</div>
+		</div>
+		</div>
+		<!-- off-canvas backdrop -->
+		<div class="mui-off-canvas-backdrop"></div>
+	</div>
+</div>
+</body>
+<script src="../js/mui.min.js"></script>
+<script src="js/jquery-1.7.1.min.js"></script>
+
+<script language="javascript" type="text/javascript"> 
+	setInterval(function () { 
+		scrollNews(); 
+	},2000); 
+	function scrollNews() {
+		console.log(1);
+		var $news = $('.news_scrollNews .hot-news_list');
+		var $lineHeight = $news.find('li:first').height(); 
+		$news.animate({ 'marginTop': -$lineHeight + 'px' }, 600, function () { 
+			$news.css({ margin: 0 }).find('li:first').appendTo($news); 
+		}); 
+	} 
+</script> 
+<script>
+	mui.init();
+	mui('body').on('tap','a',function(){document.location.href=this.href;});
+	//侧滑容器父节点
+	var offCanvasWrapper = mui('#offCanvasWrapper');
+	//移动效果是否为整体移动
+	var moveTogether = true;
+	//主界面和侧滑菜单界面均支持区域滚动；
+	mui('#offCanvasSideScroll').scroll();
+	mui('#offCanvasContentScroll').scroll();
+	//实现ios平台原生侧滑关闭页面；
+	if (mui.os.plus && mui.os.ios) {
+		mui.plusReady(function() { //5+ iOS暂时无法屏蔽popGesture时传递touch事件，故该demo直接屏蔽popGesture功能
+			plus.webview.currentWebview().setStyle({
+				'popGesture': 'none'
+			});
+		});
+	}
+</script>
+
+<!-- <script src="js/jquery-1.7.1.min.js"></script> -->
+</html>

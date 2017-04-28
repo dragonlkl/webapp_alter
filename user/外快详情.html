@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>外快详情</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/connom.css" />
+	<style>
+
+		/*弹框的样式扩展*/
+		.mui-popup-inner{padding: 0;background: #fff;}
+		.mui-popup-text{padding:30px 23px;}
+		.mui-popup-title{line-height: 50px;border-bottom: 1px solid #E9E9E9;}
+		.mui-popup-inner:after{background: none;}
+		.mui-popup-button:after{background: none;}
+		.mui-popup-button{background: #C6CCD6;color: #fff;}
+		.mui-popup-button:first-child{border-radius: 3px 3px 3px 3px;margin-right: 10px;}
+		.mui-popup-button:last-child{border-radius: 3px 3px 3px 3px;background: #1A92ED;}
+		.mui-popup-buttons{background: #fff;padding:0 23px 30px 23px;height: 74px;}
+
+		.mui-table-view:before{background: none;}
+		.mui-table-view:after{background: none;}
+		.mui-content>.mui-table-view.pull-alert:first-child {margin-top: 0;}
+		.mui-table-view.pull-alert{background: #fff;padding: 15px;}
+		.mui-table-view-cell.pull-alert:after{background: none;}
+		.mui-table-view .mobile-img{float: left;width: 50px;height: 50px;border-radius: 50px;}
+		.mui-table-view .mobile-img img{width: 50px;height: 50px;border-radius: 50px;display: block;}
+		.mui-slider-handle.pull-alert{margin-left: 60px;}
+		.mui-table-view.pull-alert .mui-table-view-cell.pull-alert{background: #fff;padding: 15px;border-bottom: 1px solid #E9E9E9;}
+		.slider-name{font-size: 18px;color: #2C3E4D;padding-bottom: 13px;}
+		.slider-text{font-size: 12px;color: #939BA9;line-height: 16px;}
+		.slider-text span{font-size: 14px;color: #FF5858;margin-right: 5px;}
+		.slider-text em{float: right;}
+
+
+
+		.tab-nav-block{
+			position: fixed;
+			padding: 7px 15px;
+			border-top: 1px solid #E9E9E9;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background:#fff;z-index: 999;
+		}
+		.tab-nav-block .button{background: #178FF2;border-radius: 3px;height: 35px;margin-right: 2%;float: left;width: 49%;}
+		.button.pull-right{margin-right: 0;}
+
+		.msg-title{line-height: 40px;font-size: 14px;color: #2C3E4D;padding: 0 15px;}
+		.tab-nav-block .icon-chat{background: url(images/icon-chat.png) no-repeat left center;background-size:20px;text-indent: 20px;display: inline-block;}
+		.tab-nav-block .icon-mobile{background: url(images/icon-mobile.png) no-repeat left center;background-size:20px;text-indent: 20px;display: inline-block;}
+		.mobile-img{float: left;}
+		.card-content-inner{position: relative;border-left: 2px solid #E9EFF8;padding-left: 15px;padding-bottom: 15px;}
+		.card-content-inner .facebook-msg{display: block;width: 10px;height: 10px;background: #69BBFF;border-radius: 10px;position: absolute;top: 0;left: -6px;}
+		.mui-content.pull-alert{padding-bottom: 60px;}
+	</style>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav pull-height">
+	<a href="javascript:history.back(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<h1 class="mui-title">外快详情</h1>
+</header>
+	<div id="offCanvasSideScroll" class="mui-content mui-scroll-wrapper">
+		<div class="mui-scroll">
+			<div class="mui-content pull-alert">
+				<div class="mui-table-view pull-alert">
+					<div class="mui-slider-handle">
+						<p class="slider-name">帮接保管快递3~4天</p>
+						<p class="slider-text"><em>9.30  17:53</em>发起</p>
+					</div>
+				</div>
+				<p class="msg-title">工作内容</p>
+				<div class="mui-table-view pull-alert">
+					<div class="card-content-inner">
+						<em class="facebook-msg"></em>
+						<p class="slider-name">详情</p>
+						<p class="slider-text">在学校内派KFC最新活动优惠传单，在学校内派KFC最新活动优惠传单，在学校内派KFC最新活动优惠传单，在学校内派KFC最新活动优惠传单</p>
+					</div>
+					<div class="card-content-inner">
+						<em class="facebook-msg"></em>
+						<p class="slider-name">时间</p>
+						<p class="slider-text">9：00 ~ 14：00</p>
+					</div>
+					<div class="card-content-inner">
+						<em class="facebook-msg"></em>
+						<p class="slider-name">地点</p>
+						<p class="slider-text">男生宿舍7棟到9棟之间</p>
+					</div>
+					<div class="card-content-inner">
+						<em class="facebook-msg"></em>
+						<p class="slider-name">人数</p>
+						<p class="slider-text">5人</p>
+					</div>
+				</div>
+				<p class="msg-title">外快发起人</p>
+				<div class="mui-table-view pull-alert">
+					<div class="mobile-img"><img src="images/personalbg.png" alt=""></div>
+					<div class="mui-slider-handle pull-alert">
+						<p class="slider-name">帮接保管快递3~4天</p>
+						<p class="slider-text"><em>9.30  17:53</em>发起</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="tab-nav-block mui-clearfix">
+	<a href="聊天.html" style="display: block;"><button class="button"><em class="icon-chat">和TA聊聊</em></button></a>
+	<button class="button pull-right"><em class="icon-mobile">电话联系</em></button>
+</div>
+</body>
+<script src="../js/mui.min.js"></script>
+<script>
+	mui.init({
+		swipeBack: false
+	});
+	mui('#offCanvasSideScroll').scroll();
+	(function($) {
+		$('.tab-nav-block').on('tap', '.button.pull-right', function(event) {
+			var elem = this;
+			var li = elem.parentNode.parentNode;
+			mui.confirm('是否拨打13536210694进行电话联系', '温馨提示', btnArray, function(e) {
+			if (e.index == 0) {
+				//alert("取消");
+				// li.parentNode.removeChild(li);
+			} else {
+			// 	setTimeout(function() {
+			// 	$.swipeoutClose(li);
+			// }, 0);
+				alert("13536210694");
+			}
+		});
+	});
+	var btnArray = [ '取消','拨打'];
+})(mui);
+</script>
+</html>

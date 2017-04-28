@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>合作院校</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<link rel="stylesheet" href="css/connom.css" />
+	<link href="../css/mui.indexedlist.css" rel="stylesheet" />
+	<style>
+		.mui-indexed-list-bar{background: none;}
+		.mui-indexed-list-group{padding-top: 9px;padding-bottom: 9px;background: #EFF4FA;}
+		.mui-table-view-cell:after{left: 0;}
+		.slide-sireNav{margin: 0 24px;position: relative;overflow: auto;height: 44px;}
+		.slide-sireNav .sireNav-list li{float: left;line-height: 44px;padding: 0 12px;}
+		.slide-sireNav .sireNav-list li a{font-size: 14px;color: #A1D1F9;}
+		.slide-sireNav .sireNav-list li .pull-on{color: #fff;}
+		.mui-content>.mui-table-view:first-child{margin-top: 0;}
+		.mui-table-view:before{background: none;}
+		.mui-table-view:after{background: none;}
+		.mui-table-view .mobile-size img{display: block;width: 100%;}
+	</style>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav pull-height">
+	<a href="javascript:history.back(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<div class="slide-sireNav">
+		<ul class="sireNav-list mui-clearfix" id="sireNav-list">
+			<li><a href="合作院校.html" class="pull-on">合作院校(7)</a></li>
+			<li><a href="合作企业.html">合作企业(887)</a></li>
+			<li><a href="孵化基地.html">孵化基地(17)</a></li>
+		</ul>
+	</div>
+</header>
+<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+	<div class="mui-scroll">
+		<div class="mui-content">
+			<ul class="mui-table-view mui-grid-view">
+				<li class="mui-table-view-cell pull-alert mui-media mui-col-xs-6">
+					<a href="#" class="mobile-size"><img src="tap_img/catr_img.jpg" alt=""></a>
+				</li>
+				<li class="mui-table-view-cell pull-alert mui-media mui-col-xs-6">
+					<a href="#" class="mobile-size"><img src="tap_img/catr_img.jpg" alt=""></a>
+				</li>
+				<li class="mui-table-view-cell pull-alert mui-media mui-col-xs-6">
+					<a href="#" class="mobile-size"><img src="tap_img/catr_img.jpg" alt=""></a>
+				</li>
+				<li class="mui-table-view-cell pull-alert mui-media mui-col-xs-6">
+					<a href="#" class="mobile-size"><img src="tap_img/catr_img.jpg" alt=""></a>
+				</li>
+				<li class="mui-table-view-cell pull-alert mui-media mui-col-xs-6">
+					<a href="#" class="mobile-size"><img src="tap_img/catr_img.jpg" alt=""></a>
+				</li>
+				<li class="mui-table-view-cell pull-alert mui-media mui-col-xs-6">
+					<a href="#" class="mobile-size"><img src="tap_img/catr_img.jpg" alt=""></a>
+				</li>
+				<li class="mui-table-view-cell pull-alert mui-media mui-col-xs-6">
+					<a href="#" class="mobile-size"><img src="tap_img/catr_img.jpg" alt=""></a>
+				</li>
+				<li class="mui-table-view-cell pull-alert mui-media mui-col-xs-6">
+					<a href="#" class="mobile-size"><img src="tap_img/catr_img.jpg" alt=""></a>
+				</li>
+				<li class="mui-table-view-cell pull-alert mui-media mui-col-xs-6">
+					<a href="#" class="mobile-size"><img src="tap_img/catr_img.jpg" alt=""></a>
+				</li>
+				<li class="mui-table-view-cell pull-alert mui-media mui-col-xs-6">
+					<a href="#" class="mobile-size"><img src="tap_img/catr_img.jpg" alt=""></a>
+				</li>
+			</ul> 
+		</div>
+	</div>	
+</div>
+</body>
+<script src="../js/mui.min.js"></script>
+<script>
+	mui.init({
+		swipeBack: false
+	});
+	mui('#offCanvasContentScroll').scroll();
+</script>
+<script src="js/jquery-1.7.1.min.js"></script>
+<script>
+	$("#sireNav-list").width($('#sireNav-list li').length * 114);
+</script>
+</html>

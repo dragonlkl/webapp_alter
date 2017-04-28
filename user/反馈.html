@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>反馈</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/connom.css" />
+	<style>
+		.mui-scroll-wrapper{top: 44px;}
+		.mui-input-group:before{background: none;}
+		.mui-input-group:after{background: none;}
+		.user-exit-btn .button{display: block;width: 100%;background: #1A92ED;border-radius: 3px;color: #fff;line-height: 50px;text-align: center;}
+		.user-exit-btn{margin:30px 60px;}
+		.mui-toast-container{bottom: 200px;}
+		.mui-toast-message{background-color: #000;color: #fff;opacity: 0.7;line-height: 40px;font-size: 14px;}
+		.mui-toast-container.mui-active{bottom: 200px;}
+		.text-number{background: #fff;display: block;text-align: right;padding-bottom: 14px;padding-right: 15px;}
+		.mui-input-group textarea{padding-top: 16px;font-size: 14px;color: #939BA9;}
+	</style>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav pull-height">
+	<a href="javascript:history.back(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<h1 class="mui-title">反馈</h1>
+</header>
+<div class="mui-content">
+	<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+	<div class="mui-scroll">
+		<div class="mui-content pull-color">
+			<form class="mui-input-group">
+				<textarea id="textarea" rows="10" placeholder="校园创客很是愿意接受你心里的话呢~"></textarea>
+			</form>
+			<p class="text-number">0/300</p>
+			<div class="user-exit-btn" id='toastBtn'><a href="#" class="button">提交</a></div>
+		</div>
+	</div>
+	</div>
+</div>
+</body>
+<script src="../js/mui.min.js"></script>
+<script>
+	mui.init({
+		swipeBack: false
+	});
+	mui('#offCanvasSideScroll').scroll();
+
+	document.getElementById("toastBtn").addEventListener('tap', function() {
+		mui.toast('没有填写内容');
+	});
+</script>
+</html>

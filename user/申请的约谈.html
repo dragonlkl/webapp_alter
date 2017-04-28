@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>申请的约谈</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/connom.css" />
+	<style>
+		/*弹框的样式扩展*/
+		.mui-popup-inner{padding: 0;background: #fff;}
+		.mui-popup-text{padding:30px 23px;}
+		.mui-popup-title{line-height: 50px;border-bottom: 1px solid #E9E9E9;}
+		.mui-popup-inner:after{background: none;}
+		.mui-popup-button:after{background: none;}
+		.mui-popup-button{background: #C6CCD6;color: #fff;}
+		.mui-popup-button:first-child{border-radius: 3px 3px 3px 3px;margin-right: 10px;}
+		.mui-popup-button:last-child{border-radius: 3px 3px 3px 3px;background: #1A92ED;}
+		.mui-popup-buttons{background: #fff;padding:0 23px 30px 23px;height: 74px;}
+	</style>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav pull-height">
+	<a href="javascript:history.back(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<h1 class="mui-title">申请的约谈</h1>
+	<a class="mui-icon mui-pull-right mui-icon-phone" id='confirmBtn'></a>
+</header>
+<div class="mui-content">
+	<div id="slider" class="mui-slider">
+		<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+			<div class="slider-block-tabs">
+				<a class="mui-control-item mui-active" href="#item1mobile">项目</a>
+				<a class="mui-control-item" href="#item2mobile">合伙人</a>
+				<a class="mui-control-item" href="#item3mobile">投资人</a>
+			</div>
+		</div>
+		<!--<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-2"></div>-->
+		<div class="mui-slider-group">
+			<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+				<div id="scroll1" class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<!-- <div class="connom-noRecord">暂无收藏</div> -->
+						<ul class="item-content-inner pull-left">
+							<li class="content-inner-box pull-left pull-border mui-clearfix">
+								<div class="content-inner pull-float mui-clearfix">
+									<div class="items-centent mui-clearfix">
+				                        <div class="items-logo"><div class="mas-project"><img src="images/NotRelease.png" alt=""></div><img src="../images/catr_img1.jpg" alt=""></div>
+				                        <p class="items-name">企业信息化服务 </p>
+				                        <p class="items-msg">6762人收藏</p>
+				                        <div class="items-pro">
+				                            <span>科技</span>
+				                            <span>互联网</span>
+				                            <em>广州</em>
+				                        </div>
+				                    </div>
+				                    <div class="items-plan"><p class="pull-col"></p></div>
+				                    <div class="items-fund">创业资金目标<span>500万</span>已获得<em>245万</em><em class="pull-right">47%</em></div>
+								</div>
+							</li>
+							<li class="content-inner-box pull-left pull-border mui-clearfix">
+								<div class="content-inner pull-float mui-clearfix">
+									<div class="items-centent mui-clearfix">
+				                        <div class="items-logo"><div class="mas-project"><img src="images/HasBeenCompleted.png" alt=""></div><img src="../images/catr_img1.jpg" alt=""></div>
+				                        <p class="items-name">企业信息化服务 </p>
+				                        <p class="items-msg">6762人收藏</p>
+				                        <div class="items-pro">
+				                            <span>科技</span>
+				                            <span>互联网</span>
+				                            <em>广州</em>
+				                        </div>
+				                    </div>
+				                    <div class="items-plan"><p class="pull-col"></p></div>
+				                    <div class="items-fund">创业资金目标<span>500万</span>已获得<em>245万</em><em class="pull-right">47%</em></div>
+								</div>
+							</li>
+            			</ul>
+					</div>
+				</div>
+			</div>
+			<div id="item2mobile" class="mui-slider-item mui-control-content">
+				<div id="scroll2" class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="connom-noRecord">暂无合伙人</div>
+						<div class="item-content-inner pull-left">
+							<div class="content-inner-box pull-left pull-border mui-clearfix">
+								<div class="content-inner pull-float mui-clearfix">
+									<div class="item-view-cell">
+										<div class="view-img"><img src="images/OnADate.png" alt=""></div>
+										<p class="text pull-alter">宫水三叶<em class="msg-win">约谈成功</em></p>
+										<p class="text pull-inner"><em>电子商务</em><em>餐饮服务</em></p>
+									</div>
+								</div>
+							</div>
+							<div class="content-inner-box pull-left pull-border mui-clearfix">
+								<div class="content-inner pull-float mui-clearfix">
+									<div class="item-view-cell">
+										<div class="view-img"><img src="images/OnADate.png" alt=""></div>
+										<p class="text pull-alter">宫水三叶<em class="msg-look">已申请1天</em></p>
+										<p class="text pull-inner"><em>电子商务</em><em>餐饮服务</em></p>
+									</div>
+								</div>
+							</div>
+							<div class="content-inner-box pull-left pull-border mui-clearfix">
+								<div class="content-inner pull-float mui-clearfix">
+									<div class="item-view-cell">
+										<div class="view-img"><img src="images/OnADate.png" alt=""></div>
+										<p class="text pull-alter">宫水三叶<em class="msg-win">约谈成功</em></p>
+										<p class="text pull-inner"><em>电子商务</em><em>餐饮服务</em></p>
+									</div>
+								</div>
+							</div>
+							<div class="content-inner-box pull-left pull-border mui-clearfix">
+								<div class="content-inner pull-float mui-clearfix">
+									<div class="item-view-cell">
+										<div class="view-img"><img src="images/OnADate.png" alt=""></div>
+										<p class="text pull-alter">宫水三叶<em class="msg-look">已申请1天</em></p>
+										<p class="text pull-inner"><em>电子商务</em><em>餐饮服务</em></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="item3mobile" class="mui-slider-item mui-control-content">
+				<div id="scroll3" class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="connom-noRecord">暂无投资人</div>
+						<ul class="mui-table-view mui-grid-view pull-alert">
+					        <li class="mui-table-view-cell pull-alert mui-media mui-col-xs-6">
+					        	<a href="#">
+					        		<div class="invest-inner-list">
+					        			<p class="Certified"><img src="images/Certified.png" alt=""></p>
+					        			<div class="invest-inner">
+						        			<img src="../images/cbd.jpg" alt="">
+						        			<p class="name">宫水三叶</p>
+						        		</div>
+						        		<div class="invest-inner">
+						        			<p>主投方向</p>
+						        			<ul class="block-list mui-clearfix">
+						        				<li>电子商务</li>
+						        				<li>餐饮服务</li>
+						        				<li>电子商务</li>
+						        				<li>餐饮服务</li>
+						        			</ul>
+						        		</div>
+						        		<p class="invest-time">已申请1天</p>
+					        		</div>
+					        	</a>
+					        </li>
+					        <li class="mui-table-view-cell pull-alert mui-media mui-col-xs-6">
+					            <div class="invest-inner-list">
+					        			<p class="Certified"><img src="images/Certified.png" alt=""></p>
+					        			<div class="invest-inner">
+						        			<img src="../images/cbd.jpg" alt="">
+						        			<p class="name">宫水三叶</p>
+						        		</div>
+						        		<div class="invest-inner">
+						        			<p>主投方向</p>
+						        			<ul class="block-list mui-clearfix">
+						        				<li>电子商务</li>
+						        				<li>餐饮服务</li>
+						        				<li>电子商务</li>
+						        				<li>餐饮服务</li>
+						        			</ul>
+						        		</div>
+						        		<p class="invest-time">已申请1天</p>
+					        		</div>
+					        </li>
+					        <li class="mui-table-view-cell pull-alert mui-media mui-col-xs-6">
+					            <div class="invest-inner-list">
+					        			<p class="Certified"><img src="images/Certified.png" alt=""></p>
+					        			<div class="invest-inner">
+						        			<img src="../images/cbd.jpg" alt="">
+						        			<p class="name">宫水三叶</p>
+						        		</div>
+						        		<div class="invest-inner">
+						        			<p>主投方向</p>
+						        			<ul class="block-list mui-clearfix">
+						        				<li>电子商务</li>
+						        				<li>餐饮服务</li>
+						        				<li>电子商务</li>
+						        				<li>餐饮服务</li>
+						        			</ul>
+						        		</div>
+						        		<p class="invest-time pull-alert">约谈成功</p>
+					        		</div>
+					        </li>
+					        <li class="mui-table-view-cell pull-alert mui-media mui-col-xs-6">
+					            <div class="invest-inner-list">
+					        		<p class="Certified"><img src="images/Certified.png" alt=""></p>
+					        		<div class="invest-inner">
+						        		<img src="../images/cbd.jpg" alt="">
+						        		<p class="name">宫水三叶</p>
+						        	</div>
+						        	<div class="invest-inner">
+						        		<p>主投方向</p>
+						        		<ul class="block-list mui-clearfix">
+						        			<li>电子商务</li>
+						        			<li>餐饮服务</li>
+						        			<li>电子商务</li>
+						        			<li>餐饮服务</li>
+						        		</ul>
+						        	</div>
+						        	<p class="invest-time pull-alert">约谈成功</p>
+					        	</div>
+					        </li>
+					    </ul> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="../js/mui.min.js"></script>
+<script>
+	mui.init({
+		swipeBack: false
+	});
+	(function($) {
+		$('.mui-scroll-wrapper').scroll({
+			indicators: true //是否显示滚动条
+		});
+	})(mui);
+
+	document.getElementById("confirmBtn").addEventListener('tap', function() {
+		var btnArray = ['取消', '拨打'];
+		mui.confirm('申请约谈时间过去太久还没有反应？是否拨打020 - 25423452进行客服在线咨询？', '温馨提示', btnArray, function(e) {
+			if (e.index == 1) {
+					// info.innerText = '你刚确认MUI是个好框架';
+					alert("020 - 25423452");
+				} else {
+					// info.innerText = 'MUI没有得到你的认可，继续加油'
+					
+			}
+		})
+	});
+</script>
+<script src="js/jquery-1.7.1.min.js"></script>
+<script>
+	$(".mui-control-content").height($(window).height()-94);
+</script>
+</body>
+</html>

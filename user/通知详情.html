@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>通知详情</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/connom.css" />
+	<style>
+		.mui-scroll-wrapper{top: 44px;}
+		.mui-content.pull-color{padding:20px 15px;background-color: #fff;}
+		.mui-content.pull-color .back-title{font-size: 20px;color: #2C3E4D;font-weight: 500;margin: 0;}
+		.mui-content.pull-color .back-time{font-size: 13px;color: #939BA9;padding-top: 10px;}
+		.mui-content.pull-color .back-text{font-size: 13px;color: #939BA9;font-size: 16px;color: #2C3E4D;line-height: 24px;text-indent: 30px;}
+	</style>
+</head>
+<body style="background-color: #fff;">
+<header class="mui-bar mui-bar-nav pull-height">
+	<a href="javascript:history.back(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<h1 class="mui-title">通知详情</h1>
+</header>
+<div class="mui-content">
+	<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+	<div class="mui-scroll">
+		<div class="mui-content pull-color">
+			<h2 class="back-title">国庆放假时间通知</h2>
+			<p class="back-time">09-30  12:58</p>
+			<div class="back-text">
+				国庆假期放假时间为10月1日至10月7日请各位同学准时返校，国庆假期放假时间为10月1日至10月7日请各位同学准时返校，国庆假期放假时间为10月1日至10月7日请各位同学准时返校，国庆假期放假时间为10月1日至10月7日请各位同学准时返校。
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+</body>
+<script src="../js/mui.min.js"></script>
+<script>
+	mui.init({
+		swipeBack: false
+	});
+	mui('#offCanvasSideScroll').scroll();
+</script>
+</html>

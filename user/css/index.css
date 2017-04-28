@@ -1,0 +1,246 @@
+.item{
+background: #fff;
+padding-left: 0.75rem;
+padding-right: 0.75rem;
+display: block;
+}
+.item.hot-news{
+	margin: 0.5rem 0;
+    font-size: 0.6rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.menu-lists{
+	border-bottom: 1px solid #E9E9E9;
+    width: 100%;
+    background: #fff;
+}
+.hot-news span{
+	float: left;
+	width: 70px;
+	height: 26px;
+}
+.hot-news span img{
+	display: block;
+	width:100%;
+}
+.hot-news h2{
+	height: 1.3rem;
+    line-height: 1.3rem;
+    overflow: hidden;
+    font-size: 12px;
+    color: #2C3E4D;
+    font-weight: 500;
+}
+.menu-lists{
+	border-bottom: 1px solid #E9E9E9;
+    width: 100%;
+    background: #fff;
+}
+.menu-lists .view-cell{
+	width: 33.33%;
+	float: left;
+	border-right:1px solid #E9E9E9;
+	text-align: center;
+	font-size: 12px;
+	padding:15px 0
+}
+.menu-lists .view-cell:last-child{
+	border-right:none;
+}
+.menu-lists .view-cell a{
+	margin:0 auto;
+	display: block;
+	width: 58px;
+	background: url(../images/Cooperation.png) no-repeat;
+	padding-top:20px;
+	color: #939BA9;
+}
+.menu-lists .view-cell .media-body{
+	margin-top:8px;
+}
+.pull-arrow{
+	width:60%;
+	margin:20px auto;
+	background: #FFFFFF;
+	border-radius: 5px;
+	text-align: center;
+	padding:13px 0;
+}
+.pull-arrow p{
+	margin-bottom: 0;
+	font-size: 14px;
+	color: #939BA9;
+}
+.slider-item{
+	background:#fff;
+}
+.slider-item .table-view{
+	text-align: center;
+	padding-top:25px;
+	padding-bottom:20px;
+}
+.slider-item .table-view .table-view-cell a{
+	font-size: 12px;
+	color: #2C3E4D;
+}
+.slider-item .table-view .table-view-cell span{
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin:0 auto;
+}
+.slider-item .table-view .table-view-cell .icon-1{
+	background:url(../images/WanxunNews.png) no-repeat;
+	background-size: 40px 40px;
+}
+.slider-item .table-view .table-view-cell .icon-2{
+	background:url(../images/CampusNotice.png) no-repeat;
+	background-size: 40px 40px;
+}
+.slider-item .table-view .table-view-cell .icon-3{
+	background:url(../images/ExtraMoney.png) no-repeat;
+	background-size: 40px 40px;
+}
+.slider-item .table-view .table-view-cell .icon-4{
+	background:url(../images/OnADate.png) no-repeat;
+	background-size: 40px 40px;
+}
+.mui-table-view-cell:after{
+	left:0;
+}
+.mui-h6.pull-right .em{
+	float: right;
+}
+.mui-h6.pull-right{
+	line-height: 15px;
+	margin-top: 38px;
+}
+.item-content{
+	background:#fff;
+}
+.item-content.pull-bot{
+	margin-bottom: 10px;
+}
+.item-content .news-title{
+	font-size: 14px;
+	color: #2C3E4D;
+	margin:0;
+	padding:0 15px;
+	line-height: 40px;
+	font-weight: 500;
+}
+.item-content .news-title a{
+	float: right;
+	color: #939BA9;
+}
+.mui-table-view .mui-media-object{
+	line-height: 74px;
+    max-width: 100px;
+    height: 74px;
+}
+.mui-table-view:before{
+	background-color: #fff;
+}
+.item-row{
+	background: #C6CCD6;
+	font-size: 18px;
+	margin-bottom: 10px;
+	text-align: center;
+	padding:51px 0;
+	color:#fff;
+}
+.mui-table-view.mui-grid-view .mui-table-view-cell{
+	padding-top:0;
+}
+.item-media-block{
+	margin:0 15px;
+	background: #EFF4FA;
+	position: relative;
+}
+.item-media-block .pos-msg{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 12px;
+	color: #FFFFFF;
+	opacity: 0.5;
+	background: #000000;
+	border-radius: 15px;
+	padding:3px 10px;
+}
+.item-media-block img{
+	display: block;
+	width: 100%;
+}
+.item-media-block .media-body{
+	font-size: 14px;
+	color: #2C3E4D;
+	padding:13px 10px 15px 10px;
+}
+.item-content.pull-padd{
+	padding-bottom: 20px;
+}
+.pull-arrow .text{
+	font-size: 14px;
+	color: #2C3E4D;
+	padding-bottom: 5px;
+}
+.item-media-block .media-img{
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+
+}
+.item-media-block .media-img img{
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+}
+.mui-media-body p{
+	margin-bottom: 0;
+}
+.mui-media-body .em{
+	float: right;
+}
+.mui-media-body .text{
+	font-size: 14px;
+	color: #2C3E4D;
+}
+.arrow2-block{
+	padding:18px 15px 18px 22px;
+}
+.arrow2-block a{
+	font-size: 18px;
+	color: #6B717C;
+}
+.MicroFilm-text{
+	float: left;
+}
+.MicroFilm-text p{
+	margin-bottom: 0;
+}
+.arrow2-block .MicroFilm{
+	width: 74px;
+	height: 74px;
+	background:url(../images/MicroFilm.png) no-repeat;
+	background-size: 74px 74px;
+	float: right;
+}
+.arrow2-block .arrow2-btn{
+	width: 14px;
+	height: 74px;
+	background:url(../images/MicroFilmArrow.png) no-repeat center center;
+	float: right;
+	background-size: 14px 14px;
+	margin-left: 10px;
+}
+.MicroFilm-text span{
+	font-size: 18px;
+	padding-bottom: 13px;
+	display: inline-block;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #E9EFF8;
+}

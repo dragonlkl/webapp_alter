@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>找回密码</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/connom.css" />
+	<link rel="stylesheet" type="text/css" href="css/user.css" />
+</head>
+<body style="background-color: #fff;">
+<header class="mui-bar mui-bar-nav pull-height">
+	<h1 class="mui-title">找回密码</h1>
+	<a href="登录.html" class="mui-icon mui-pull-right pull-size">登录</a>
+</header>
+<div class="mui-content">
+	<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+	<div class="mui-scroll">
+		<div class="mui-content pull-color pull-bj">
+			<div class="wx-logo"><img src="images/logo.png" alt=""></div>
+			<div class="login-gallery">
+				<ul class="login-gallery-list mui-clearfix">
+					<li><a href="#" class="on">个人注册</a></li>
+					<li><a href="#">企业注册</a></li>
+				</ul>
+			</div>
+			<div class="pwd-form">
+				<form class="mui-input-group">
+				<div class="mui-input-row pull-alert">
+					<label class="icon-phone"></label>
+					<input type="text" class="mui-input-clear" placeholder="输入手机号">
+				</div>
+				<div class="mui-input-row pull-code">
+					<label class="icon-VerifCode"></label>
+					<input type="password" class="mui-input-clear" placeholder="输入验证码">
+					<span class="verify-code">免费获取</span>
+				</div>
+				<div class="mui-input-row">
+					<label class="icon-login"></label>
+					<input type="password" class="mui-input-clear mui-input-password" placeholder="设置新密码">
+				</div>
+				</form>
+				<div class="user-exit-btn pull-color" id='toastBtn'><a href="登录.html" class="button">确定</a></div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+</body>
+<script src="../js/mui.min.js"></script>
+<script>
+	mui.init({
+		swipeBack: false
+	});
+	mui('#offCanvasSideScroll').scroll();
+
+	document.getElementById("toastBtn").addEventListener('tap', function() {
+		mui.toast('错误信息提示显示样式');
+	});
+</script>
+</html>

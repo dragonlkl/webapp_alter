@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>聊天</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/connom.css" />
+    <style>
+    .mui-scroll-wrapper{top: 44px;}
+        .send-chat-block{
+    margin:0 0.5rem;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.send-chat-time{
+    font-size: 0.6rem;
+    padding: 0.75rem 0;
+    color: #939BA9;
+}
+.send-chat-img{
+    width: 2rem;
+    height: 2rem;
+}
+.send-chat-img.pull-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.send-chat-img.pull-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.send-chat-img img{
+    display: block;
+    width: 100%;
+    border-radius: 2rem;
+}
+.send-chat-center.pull-left{
+    margin-left: 2.8rem;
+    float: left;
+}
+.send-chat-center.pull-right{
+    margin-right: 2.8rem;
+    background: #69BBFF;
+    color: #2C3E4D;
+    float: right;
+}
+.send-chat-center{
+    position: relative;
+    background: #FFFFFF;
+    border: 1px solid #C6CCD6;
+    border-radius: 0.5rem;
+    font-size: 14px;
+    color: #2C3E4D;
+    padding:0.55rem 0.65rem;
+}
+.send-chat-center .icon{
+    position: absolute;
+    top: 13px;
+    display: block;
+    width: 12px;
+    height: 16px;
+}
+.send-chat-center .icon.pull-left{
+    left: -12px;
+    background: url(images/arrow-pull.jpg) no-repeat;
+}
+.send-chat-center .icon.pull-right{
+    right: -12px;
+    background: url(images/pull-right.jpg) no-repeat;
+}
+.searchbar-input{
+    margin:0 2.75rem;
+}
+.searchbar-input input{
+    display: inline-block;
+    border: none;
+    height: 49px;
+    width: 100%;
+    outline:none;
+    font-size: 0.8rem;
+    line-height: 49px;
+    margin-bottom: 0;
+    padding: 10px 0;
+}
+.searchbar-face{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2.75rem;
+    height: 2.4rem;
+    background:url(images/Expression.png) no-repeat center center;
+}
+.searchbar-addr{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2.75rem;
+    height: 2.4rem;
+    border:none;
+    font-size: 0.8rem;
+    color: #1A92ED;
+    background: #fff;
+    outline:none;
+}
+.send-chat-text{
+    position: relative;
+}
+.bar-tab-nav{position: fixed;bottom: 0;left: 0;right: 0;background: #fff;z-index: 999;}
+
+    </style>
+</head>
+<body style="background: #EFF4FA;">
+<header class="mui-bar mui-bar-nav pull-height">
+    <a href="javascript:history.back(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">这里放发起人名字</h1>
+</header>
+<div class="mui-content">
+    <div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+    <div class="send-chat-block">
+        <p class="send-chat-time">12:45</p>
+        <div class="send-chat-text mui-clearfix">
+            <div class="send-chat-img pull-right"><img src="images/Circle.png" alt=""></div>
+            <div class="send-chat-center pull-right">
+                <span class="icon pull-right"></span>
+                <p class="text">这个外快我接了这个外快我接了这个外快我接了这个外快我接了这个外快我接了</p>
+            </div>
+        </div>
+        <p class="send-chat-time">12:45</p>
+        <div class="send-chat-text mui-clearfix">
+            <div class="send-chat-img pull-left"><img src="images/Circle.png" alt=""></div>
+            <div class="send-chat-center pull-left">
+                <span class="icon pull-left"></span>
+                <p class="text">好啊，你过来拿传单先好啊，你过来拿传单先好啊，你过来拿传单先好啊，你过来拿传单先你过来拿传单先好啊，你过来拿传单先你过来拿传单先好啊，你过来拿传单先</p>
+            </div>
+        </div>
+        <p class="send-chat-time">12:45</p>
+        <div class="send-chat-text mui-clearfix">
+            <div class="send-chat-img pull-right"><img src="images/Circle.png" alt=""></div>
+            <div class="send-chat-center pull-right">
+                <span class="icon pull-right"></span>
+                <p class="text">传单先</p>
+            </div>
+        </div>
+        <p class="send-chat-time">12:45</p>
+        <div class="send-chat-text mui-clearfix">
+            <div class="send-chat-img pull-left"><img src="images/Circle.png" alt=""></div>
+            <div class="send-chat-center pull-left">
+                <span class="icon pull-left"></span>
+                <p class="text">好啊，你过来拿传单先好啊</p>
+            </div>
+        </div>
+        <p class="send-chat-time">12:45</p>
+        <div class="send-chat-text mui-clearfix">
+            <div class="send-chat-img pull-left"><img src="images/Circle.png" alt=""></div>
+            <div class="send-chat-center pull-left">
+                <span class="icon pull-left"></span>
+                <p class="text">好啊，你过来拿传单先好啊</p>
+            </div>
+        </div>
+        <p class="send-chat-time">12:45</p>
+        <div class="send-chat-text mui-clearfix">
+            <div class="send-chat-img pull-left"><img src="images/Circle.png" alt=""></div>
+            <div class="send-chat-center pull-left">
+                <span class="icon pull-left"></span>
+                <p class="text">好啊，你过来拿传单先好啊</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<header class="bar-tab-nav mui-clearfix">
+    <a href="#" class="searchbar-face"></a>
+    <div class="searchbar-input"><input type="text" placeholder="输入文字…"></div>
+    <button class="searchbar-addr">评论</button>
+</header>
+</body>
+<script src="../js/mui.min.js"></script>
+<script>
+    mui.init({
+        swipeBack: false
+    });
+    mui('#offCanvasSideScroll').scroll();
+</script>
+</html>

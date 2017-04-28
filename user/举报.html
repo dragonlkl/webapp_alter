@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>举报</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../css/mui.min.css">
+    <link rel="stylesheet" href="css/connom.css" />
+    <!-- <script src="js/jquery-1.7.1.min.js"></script> -->
+    <style>
+        .content-item{background: #fff;font-size: 14px;color: #939BA9;padding: 15px;}
+        .content-item .shop-form li{font-size: 14px;color: #2C3E4D;line-height: 40px;position: relative;text-indent:29px;}
+        .checkboxcss{margin-right: 15px;display: block;width: 14px;height: 14px;border: 1px solid #C6CCD6;border-radius: 3px;position: absolute;top: 13px;left: 0;background: #f7f7f7;}
+        .content-item .shop-form .fonm-title{text-indent:0;color: #939BA9;}
+        .check-input{position: absolute;top: 13px;display: block;left: 0;border:none;width: 14px;height: 14px;z-index: 1;opacity: 0}
+        .shop-form li .checkboxcss:after {opacity: 0;content: '';position: absolute;width: 12px;height: 12px;top: -1px;left: -1px;border: 1px solid #1A92ED;border-radius: 3px;background: url(images/selected.png) center center transparent;background-size: 18px;}
+        .shop-form input[type=checkbox]:checked + label:after {opacity: 1;}
+        .shop-textarea textarea{display: block;}
+        .button-form{padding-top: 15px;}
+        .button-form .button{width: 100%;background: #1A92ED;}
+    </style>
+</head>
+<body style="background: #fff">
+<header class="mui-bar mui-bar-nav pull-height">
+    <a href="javascript:history.back(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">举报</h1>
+</header>
+<div class="mui-content">
+    <div class="content-item">
+        <ul class="shop-form">
+            <li class="fonm-title">请选择举报原因（可多选）</li>
+            <li><input type="checkbox" class="check-input" /><label class="checkboxcss"></label>广告</li>
+            <li><input type="checkbox" class="check-input" /><label class="checkboxcss"></label>垃圾信息</li>
+            <li><input type="checkbox" class="check-input" /><label class="checkboxcss"></label>色情、淫秽或低俗内容</li>
+            <li><input type="checkbox" class="check-input" /><label class="checkboxcss"></label>激进时政或意识形态话题</li>
+            <li><input type="checkbox" class="check-input" /><label class="checkboxcss"></label>其他原因</li>
+        </ul>
+        <div class="shop-textarea">
+            <textarea name="" id="" cols="30" rows="5" placeholder="填写其他原因"></textarea>
+        </div>
+        <div class="button-form"><button class="button">提交</button></div>
+    </div>
+</div>
+</body>
+</html>

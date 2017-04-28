@@ -1,0 +1,148 @@
+.mui-scroll-wrapper{top: 44px;}
+		.mui-content.pull-color{background: #fff;padding: 15px;}
+		.mui-content.pull-color .wx-logo{width: 110px;height: 50px;margin: 20px auto;}
+		.mui-content.pull-color .wx-logo img{display:block;width: 110px;height: 50px;}
+		.pwd-form{padding-top: 30px;margin: 0 30px;}
+		.pwd-form .mui-input-row .mui-input-clear~.mui-icon-clear{right: 30px;}
+
+		.pwd-form .mui-input-row.pull-alert .mui-input-clear~.mui-icon-clear{right: 0px;}
+
+.pwd-form .mui-input-row.pull-code .mui-input-clear~.mui-icon-clear{right: 60px;}
+
+		.pwd-form .mui-input-group .mui-input-row{height: 50px;}
+		.mui-input-row .mui-input-clear{height: 49px;width: 86%;margin-top: 2px;}
+		.mui-input-row{height: 49px;line-height: 49px;}
+.pwd-form .icon-login{
+	background: url(../images/Login.png) no-repeat center center;
+	background-size: 20px 20px;
+	width: 10%;
+	height: 50px;
+}
+.pwd-form .icon-login.pull-alert{
+	background: url(../images/user-img.png) no-repeat center center;
+	background-size: 20px 20px;
+	width: 10%;
+	height: 50px;
+}
+.pwd-form .icon-phone{
+	background: url(../images/phone.png) no-repeat center center;
+	background-size: 20px 20px;
+	width: 10%;
+	height: 50px;
+}
+.pwd-form .icon-VerifCode{
+	background: url(../images/VerifCode.png) no-repeat center center;
+	background-size: 20px 20px;
+	width: 10%;
+	height: 50px;
+}
+		.mui-input-group .mui-icon{line-height: 32px;}
+		.mui-input-group:before{background: none;}
+		.mui-input-group .mui-input-row:after{left: 0;}
+		.user-exit-btn{margin-top: 30px;}
+		.user-exit-btn .button{display: block;width: 100%;background: #C6CCD6;border-radius: 3px;color: #fff;line-height: 50px;text-align: center;}
+		.mui-toast-container{bottom: 200px;}
+		.mui-toast-message{background-color: #000;color: #fff;opacity: 0.7;line-height: 40px;font-size: 14px;}
+		.mui-toast-container.mui-active{bottom: 200px;}
+
+.pwd-form .for-pwd{
+	padding-top: 15px;font-size: 14px;
+}
+.pwd-form .for-pwd a{
+	
+	color: #939BA9;
+}
+.user-exit-btn.pull-color .button{
+	background: #1A92ED;
+}
+.mui-content .login-gallery{
+	width: 60%;
+	margin: 0 auto;
+}
+.login-gallery-list li{
+	float: left;
+	width: 50%;
+	text-align: center;
+	line-height: 30px;
+}
+.login-gallery-list li a{
+	font-size: 14px;
+	color: #939BA9;
+}
+.login-gallery-list li .on{
+	color: #1A92ED;
+	border-bottom: 2px solid #1A92ED;
+	border-radius: 2px;
+	padding:0 4px 4px 4px;
+}
+.mui-input-row .verify-code{
+	position: absolute;
+	top: 0;
+	right: 5px;
+	font-size: 12px;
+	color: #1A92ED;
+}
+.deal-checkbox{
+	display: block;
+	float: left;
+	margin-top: 4px;
+	margin-right: 5px;
+}
+.mui-content.pull-bj{
+	background: url(../images/user-footer-bj.png) no-repeat bottom center;
+	background-size: 100% 22%;
+	padding-bottom: 124px;
+}
+.user-pic-upload{
+	position:relative;
+	width: 70px;
+	font-size: 12px;
+	color: #939BA9;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 35px;
+}
+.user-pic-upload .pic{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+.user-pic-upload span{
+	padding-top: 7px;
+	display: block;
+}
+.user-pic-upload img{
+	display: block;
+	width: 100%;
+}
+.mui-input-row .icon-select{
+	position: absolute;
+	top: 0;
+	right: 5px;
+	height: 100%;
+	background: url(../images/Down.png) no-repeat center center;
+	background-size: 20px 20px;
+	width: 20px;
+}
+.mui-input-row .pull-height{
+	padding: 0;
+	line-height: 50px;
+	width: 20%;
+	font-size: 14px;
+	color: #2C3E4D;
+}
+.mui-input-row.pull-alert .text{
+	width: 80%;
+	height: 50px;
+	font-size: 14px;
+	color: #C6CCD6;
+}
+
+
+.mui-content .date-sex{
+	font-size: 16px;
+	color: #C6CCD6;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>新闻详情</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<link rel="stylesheet" href="css/connom.css" />
+	<style>
+		.content-news{padding:10px;margin-bottom: 50px;}
+		.content-news .content-news-title{font-size: 20px;color: #2C3E4D;font-weight: 500;padding-bottom: 10px;margin:0;}
+		.content-news .date{font-size: 12px;color: #939BA9;padding-bottom: 24px;}
+		.content-news p{padding-bottom: 20px;font-size: 16px;color: #2C3E4D;text-indent: 30px;}
+		.content-news_img img{display: block;width: 100%;}
+		
+		.news-nav-footer{position: fixed;background: #fff;left: 0;right: 0;height: 49px;border-top:1px solid #E9E9E9;bottom: 0;z-index: 99;padding:0 15px;font-size: 16px;color: #C6CCD6;}
+		.link-nav_left{float: left;line-height: 50px;width: 43%;}
+		.link-nav_right{float: right;}
+		.link-nav_right li{width:55px;float: left;height: 50px;position: relative;}
+		.link-nav_right li span{position: absolute;top: 7px;right: 10px;background: #FF5858;border-radius: 12px;font-size: 10px;color: #FFFFFF;line-height: 11px;padding:3px 4px 1px 4px;}
+		.link-nav_right .Comments{background: url(images/Comments.png) no-repeat center center;background-size: 30px 30px;}
+		.link-nav_right .default{background: url(images/Thumb.png) no-repeat center center;background-size: 30px 30px;}
+		.link-nav_right .Share{background: url(images/Share.png) no-repeat center center;background-size: 30px 30px;}
+
+
+.alert-content{
+	position: fixed;z-index: 100;background: #fff;border:1px solid #E9E9E9;bottom: 0;left: 0;right: 0;padding:10px;display: none;
+}
+.alert-content textarea{
+	display: block;width: 100%;height: 90px;font-size: 16px;color: #C6CCD6;padding: 10px;border:1px solid  #E9E9E9;
+	border-radius: 3px;box-sizing: border-box;
+}
+.alert-checkbox{font-size: 14px;color: #939BA9;float: left;line-height: 14px;}
+.alert-content .alert-checkbox input{display: block;float: left;margin-right: 8px;}
+.alert-content .btn{font-size: 16px;color: #1A92ED;display: block;float: right;margin-right:10px;}
+
+
+.link-active{position: fixed;bottom: 0;left: 0;right: 0;z-index: 101;width: 100%;height: 100%;display: none;}
+.sharebg-bg{background: #000;width: 100%;height: 100%;opacity: 0.5;}
+.link-share{position: absolute;bottom: 0;left: 0;background: #fff;width: 100%;}
+.link-share .share-title{font-size: 16px;color: #2C3E4D;text-align: center;padding:20px 0;}
+.link-share .share-sns li{width: 25%;float: left;text-align: center;font-size: 12px;color: #939BA9;}
+.link-share .share-sns li a{color: #939BA9;display: block;padding-top: 60px;}
+.link-share .share-sns li .icon-weibo{background: url(images/weibo.png) no-repeat top center;background-size: 55px;}
+.link-share .share-sns li .icon-friends{background: url(images/Circle.png) no-repeat top center;background-size: 55px;}
+.link-share .share-sns li .icon-WeChat{background: url(images/WeChat.png) no-repeat top center;background-size: 55px;}
+.link-share .share-sns li .icon-QQ{background: url(images/QQ.png) no-repeat top center;background-size: 55px;}
+.share-footer-btn{line-height: 45px;border-top: 1px solid #E9E9E9;margin-top: 30px;text-align: center;font-size: 14px;color: #939BA9;}
+</style>
+</head>
+<body>
+<!--主界面部分-->
+<header class="mui-bar mui-bar-nav pull-height">
+	<a href="javascript:history.back(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<h1 class="mui-title">新闻详情</h1>
+	<a href="举报.html" class="mui-icon mui-pull-right pull-size">举报</a>
+</header>
+
+<div id="offCanvasSideScroll" class="mui-content mui-scroll-wrapper">
+	<div class="mui-scroll">
+		<div class="content-news">
+		    <h2 class="content-news-title">寒冬送温暖 高新区社发局领导赴石家庄54中慰问贫困生</h2>
+		        <div class="date">9.21  12:58</div>
+		        <p>研究发现，在一项减肥计划中，不戴的健康监测器的人比佩戴的人体重要多减轻5磅</p>
+		        <p>这是本周二发表在《美国医学协会期刊》上的一项研究得出的结论，该项研究发现，使用活动追踪器的人减去的体重比不使用者少了5磅。这一结果令研究者感到震惊，他们原本相信可穿戴技术能帮助人们减肥</p>
+		        <div class="content-news_img"><img src="tap_img/catr_img1.jpg" alt="新闻图片"></div>
+		        <p>这项研究随访了471名超重或肥胖的成年人，年龄在18岁至35岁，时间长达两年。跟踪对象参加了一项减肥计划，重点专注运动、健康饮食，并每周召开协助例会。六个月后，一组参与者开始使用一个网站，自动监测他们的热量摄入和体力活动，另一组则采用一款市面上出售的可穿戴设备，佩戴在上臂，跟踪身体活动</p>
+		        <p>亚克西科说，减肥并不比简单监测你的活动更为复杂，值得注意的是，不良的饮食习惯可以抵消体力活动中能源消耗在所带来的好处。他还说，可穿戴设备不会将个人在保持健康的饮食和体育活动中所面对的障碍计算在内</p>
+		</div>
+</div>
+</div>
+<div class="news-nav-footer mui-clearfix">
+	<div class="link-nav_left">写评论…</div>
+	<ul class="link-nav_right">
+		<li class="Comments"><a href="../校园/无评论.html"><span>23</span></a></li>
+		<li class="default"><a href="#"><span>15</span></a></li>
+		<li class="Share"><a href="#"></a></li>
+	</ul>
+</div>
+
+<div class="alert-content clearfix">
+	<textarea name="" id="" cols="30" rows="10" placeholder="写评论…"></textarea>
+	<div class="alert-checkbox">
+		<input name="checkbox1" value="" type="checkbox">匿名评论
+	</div>
+	<a href="#" class="btn">评论</a>
+</div>
+			<div class="link-active">
+			    <div class="sharebg-bg"></div>
+			    <div class="link-share modal-active">
+			        <h3 class="share-title">分享到</h3>
+			        <ul class="share-sns mui-clearfix">
+			            <li><a href="#" class="icon-weibo">微博</a></li>
+			            <li><a href="#" class="icon-friends">朋友圈</a></li>
+			            <li><a href="#" class="icon-WeChat">微信</a></li>
+			            <li><a href="#" class="icon-QQ">QQ</a></li>
+			        </ul>
+			        <div class="share-footer-btn">取消</div>
+			    </div>
+			</div>
+</body>
+<script src="../js/mui.min.js"></script>
+<script>
+	mui.init();
+	mui('body').on('tap','a',function(){document.location.href=this.href;});
+	//主界面和侧滑菜单界面均支持区域滚动；
+	mui('#offCanvasSideScroll').scroll();
+</script>
+<script src="js/jquery-1.7.1.min.js"></script>
+<script>
+$(".link-nav_left").click(function(){
+	$(".alert-content").show();
+	$(".alert-content textarea").focus();
+});
+$(".link-nav_right").on("click",".Share",function(){
+	$(".link-active").fadeIn()
+});
+$(".link-active").on("click",".share-footer-btn,.sharebg-bg",function(){
+	$(".link-active").fadeOut()
+});
+</script>
+</html>

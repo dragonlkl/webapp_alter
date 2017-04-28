@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>求职意向</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/connom.css" />
+	<link rel="stylesheet" type="text/css" href="css/resume.css" />
+	<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css" />
+</head>
+<body>
+<header class="mui-bar mui-bar-nav pull-height">
+	<a href="javascript:history.back(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<h1 class="mui-title">求职意向</h1>
+	<a href="完成简历.html" class="mui-icon mui-pull-right pull-size">保存</a>
+</header>
+<div class="mui-content">
+	<ul class="table-view-list">
+		<li class="table-view-cell pull-alert mui-clearfix" id="showUserPicker">
+			<label class="left-label">工作性质</label>
+			<span class="start-time" id="userResult">请选择</span>
+			<em class="icon-arrow"></em>
+		</li>
+		<li class="table-view-cell pull-alert mui-clearfix" id="showUserPicker1">
+		<a href="工作地点.html">
+			<label class="left-label">工作地点</label>
+			<span class="start-time" id="userResult1">请选择</span>
+			<em class="icon-arrow"></em>
+		</a>
+		</li>
+		<li class="table-view-cell start pull-alert mui-clearfix" data-options='{"type":"month"}'>
+		<a href="职位类别.html">
+			<label class="left-label">职位类别</label>
+			<span class="start-time" id="result">请选择</span>
+			<em class="icon-arrow"></em>
+		</a>
+		</li>
+		<li class="table-view-cell over mui-clearfix" data-options='{"type":"month"}'>
+		<a href="行业类别.html">
+			<label class="left-label">行业类别</label>
+			<span class="start-time" id="result1">请选择</span>
+			<em class="icon-arrow"></em>
+		</a>
+		</li>
+		<li class="table-view-cell mui-clearfix">
+			<label class="left-label">期望薪资</label>
+			<input type="text" class="view-input" placeholder="请输入">
+		</li>
+	</ul>
+</div>
+<script src="../js/mui.min.js"></script>
+<script src="../js/mui.picker.min.js"></script>
+<script>
+	mui.init({
+		swipeBack: false
+	});
+</script>
+<script>
+(function($, doc) {
+	$.ready(function() {
+		var userPicker = new $.PopPicker();
+			userPicker.setData([{
+				value: 'gz',
+				text: '实习'
+			}, {
+				value: 'dz',
+				text: '全职'
+			}, {
+				value: 'bk',
+				text: '兼职'
+			}]);
+			var showUserPickerButton = doc.getElementById('showUserPicker');
+			var userResult = doc.getElementById('userResult');
+			showUserPickerButton.addEventListener('tap', function(event) {
+			userPicker.show(function(items) {
+			//userResult.innerText = JSON.stringify(items[0]);
+			userResult.innerText = items[0].text;
+			});
+		}, false);
+	});
+})(mui, document);
+</script>
+</body>
+</html>

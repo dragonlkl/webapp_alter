@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>基本信息</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/connom.css" />
+	<link href="../css/mui.picker.css" rel="stylesheet" />
+	<link href="../css/mui.poppicker.css" rel="stylesheet" />
+<style>
+	.mui-badge.pull-alter{font-size: 14px;color: #939BA9;background: none;}
+	.mui-table-view-cell{padding: 11.5px 15px;}
+	.mui-navigate-right.pull-alter .mui-badge{margin-right: -20px;}
+	.mui-navigate-right.pull-alter:after{right: 0;content: '';}
+	.mui-navigate-right.pull-alter .text{margin-top:20px;display: inline-block;}
+	.mui-table-view{margin-bottom: 10px;}
+	.mui-table-view:before{background-color:transparent;}
+	.mui-table-view-cell:after{left:0;}
+	.user-img{width: 60px;height: 60px;float: right;}
+	.user-img img{display: block;border-radius:60px;width: 60px;height: 60px;}
+
+
+	/*弹框*/
+	.mui-picker{background: #fff;}
+	.mui-poppicker-body{height: 155px;}
+	.mui-btn.mui-poppicker-btn-cancel{color: #939BA9;}
+	.mui-btn.mui-btn-blue.mui-poppicker-btn-ok{color: #2C3E4D;}
+	.mui-poppicker-header{background: #fff;border-bottom: 1px solid #E9E9E9;}
+	.mui-poppicker-header .mui-btn{border: none;background: none;}
+	</style>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav pull-height">
+	<a href="javascript:history.back(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<h1 class="mui-title">基本信息</h1>
+</header>
+<div class="mui-content">
+	<ul class="mui-table-view">
+		<li class="mui-table-view-cell pull-bar">
+			<a class="mui-navigate-right pull-alter">
+				<span class="text">头像</span>
+				<div class="user-img"><img src="images/user-img.png" alt="用户头像"></div>
+			</a>
+		</li>
+	</ul>
+	<ul class="mui-table-view">
+		<li class="mui-table-view-cell">
+			<a href="修改姓名.html" class="mui-navigate-right">
+				姓名
+				<span class="mui-badge pull-alter">罗丽珍</span>
+			</a>
+		</li>
+		<li class="mui-table-view-cell">
+			<a class="mui-navigate-right">
+				性别
+				<span class="mui-badge pull-alter">女</span>
+			</a>
+		</li>
+		<li class="mui-table-view-cell">
+			<a class="mui-navigate-right pull-alter">
+				年龄
+				<span class="mui-badge pull-alter">20岁</span>
+			</a>
+		</li>
+		<li class="mui-table-view-cell">
+			<a class="mui-navigate-right pull-alter">
+				手机号
+				<span class="mui-badge pull-alter">13536210694</span>
+			</a>
+		</li>
+		<li class="mui-table-view-cell">
+			<a href="设置邮箱.html" class=mui-navigate-right>
+				常用邮箱
+				<span class="mui-badge pull-alter">暂无</span>
+			</a>
+		</li>
+		<li class="mui-table-view-cell" id="showUserPicker">
+			<a class="mui-navigate-right">
+				求职状态
+				<span class="mui-badge pull-alter" id="userResult">设置状态</span>
+			</a>
+		</li>
+		<li class="mui-table-view-cell" id="showUserPicker1">
+			<a href="工作经历.html" class="mui-navigate-right">
+				工作经验
+				<span class="mui-badge pull-alter" id="userResult1">设置状态</span>
+			</a>
+		</li>
+	</ul>
+</div>
+<script src="../js/mui.min.js"></script>
+<script src="../js/mui.picker.js"></script>
+<script src="../js/mui.poppicker.js"></script>
+<script>
+	mui.init({
+		swipeBack: false
+	});
+</script>
+<script>
+(function($, doc) {
+	$.ready(function() {
+		var userPicker = new $.PopPicker();
+			userPicker.setData([{
+				value: 'ywj',
+				text: '应届'
+			}, {
+				value: 'aaa',
+				text: '离职'
+			}, {
+				value: 'aaa',
+				text: '在职'
+			}]);
+			var showUserPickerButton = doc.getElementById('showUserPicker');
+			var userResult = doc.getElementById('userResult');
+			showUserPickerButton.addEventListener('tap', function(event) {
+			userPicker.show(function(items) {
+			//userResult.innerText = JSON.stringify(items[0]);
+			userResult.innerText = items[0].text;
+			});
+		}, false);
+
+
+		var userPicker1 = new $.PopPicker();
+			userPicker1.setData([{
+				value: '',
+				text: '应届'
+			}, {
+				value: '',
+				text: '1年'
+			}, {
+				value: '',
+				text: '2年'
+			}, {
+				value: '',
+				text: '3年'
+			}]);
+			var showUserPickerButton1 = doc.getElementById('showUserPicker1');
+			var userResult1 = doc.getElementById('userResult1');
+			showUserPickerButton1.addEventListener('tap', function(event) {
+			userPicker1.show(function(items) {
+			//userResult.innerText = JSON.stringify(items[0]);
+			userResult1.innerText = items[0].text;
+			});
+		}, false);
+	});
+})(mui, document);
+</script>
+</body>
+</html>

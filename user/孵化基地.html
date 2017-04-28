@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>孵化基地</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<link rel="stylesheet" href="css/connom.css" />
+	<link href="../css/mui.indexedlist.css" rel="stylesheet" />
+	<style>
+		.mui-indexed-list-bar{background: none;}
+		.mui-indexed-list-group{padding-top: 9px;padding-bottom: 9px;background: #EFF4FA;}
+		.mui-table-view-cell:after{left: 0;}
+		.slide-sireNav{margin: 0 24px;position: relative;overflow: auto;height: 44px;}
+		.slide-sireNav .sireNav-list li{float: left;line-height: 44px;padding: 0 12px;}
+		.slide-sireNav .sireNav-list li a{font-size: 14px;color: #A1D1F9;}
+		.slide-sireNav .sireNav-list li .pull-on{color: #fff;}
+
+		.mui-content .map-api img{display: block;width: 100%;}
+		.map-wrapper{background: #EFF4FA;padding:0 15px;position: fixed;z-index: 999;left: 0;right: 0;bottom: 0;}
+		.map-wrapper-box{overflow: auto;position: relative;max-height: 210px;}
+		.map-wrapper-arrow{height: 50px;background: url(images/arrow3.png) no-repeat center center;background-size: 20px;transform:rotate(180deg);}
+		.map-wrapper-list{display: none;}
+		.map-wrapper-list li{line-height: 50px;background: #FFFFFF;border-radius: 3px;margin-bottom:10px;padding: 0 10px;}
+	</style>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav pull-height">
+	<a href="javascript:history.back(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<div class="slide-sireNav">
+		<ul class="sireNav-list mui-clearfix" id="sireNav-list">
+			<li><a href="合作院校.html">合作院校(7)</a></li>
+			<li><a href="合作企业.html">合作企业(887)</a></li>
+			<li><a href="孵化基地.html" class="pull-on">孵化基地(17)</a></li>
+		</ul>
+	</div>
+</header>
+<div class="mui-content">
+	<div class="map-api"><img src="tap_img/api.jpg" alt=""></div>
+</div>
+<div class="map-wrapper">
+	<p class="map-wrapper-arrow"></p>
+	<div class="map-wrapper-box">
+		<ul class="map-wrapper-list">
+			<li>1.万讯创新创业学院万讯科技企业实训基地</li>
+			<li>2.万讯创新创业学院公馆生鲜超市实训基地</li>
+			<li>3.万讯创新创业学院众创空间</li>
+			<li>4.万讯创新创业学院金宇生鲜超市实训基地</li>
+			<li>5.万讯创新创业学院万讯科技企业实训基地</li>
+			<li>6.万讯创新创业学院万讯科技企业实训基地</li>
+			<li>7.万讯创新创业学院万讯科技企业实训基地</li>
+			<li>8.万讯创新创业学院万讯科技企业实训基地</li>
+		</ul>
+	</div>
+</div>
+</body>
+<script src="js/jquery-1.7.1.min.js"></script>
+<script>
+	$("#sireNav-list").width($('#sireNav-list li').length * 114);
+	$(".map-wrapper-arrow").click(function(){
+		$(".map-wrapper-box .map-wrapper-list").slideToggle("slow",function(){
+            if ($(this).is(':hidden')) {
+                $(".map-wrapper-arrow").css({"transform":"rotate(180deg)"});
+            }else{
+                $(".map-wrapper-arrow").css({"transform":"rotate(0deg)"});
+            }
+        });
+	});
+</script>
+</html>

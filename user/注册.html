@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>注册</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/connom.css" />
+	<link rel="stylesheet" type="text/css" href="css/user.css" />
+	<style>
+		.sendCode{position: fixed;z-index: 9999;width: 100%;height: 100%;top: 0;left: 0;right: 0;display: none;}
+		.sendCode .sendCode_hide{background: #000;opacity: 0.5;width: 100%;height: 100%;}
+		.sendCode .sendCode_body{width: 80%;position: absolute;top: 50%;left: 50%;background: #fff;border-radius: 5px;padding:30px 20px;margin-left: -40%;margin-top: -150px;text-align: center;}
+		.sendCode_body .code{width: 100%;height: 70px;margin-bottom: 20px;}
+		.sendCode_body .code img{width: 100%;height: 70px;display: block;}
+		.sendCode_body .input{margin-bottom: 15px;text-align: center;font-size: 18px;background: #EFF4FA;border: 1px solid #C6CCD6;color: #2C3E4D;}
+		.sendCode_body .text{font-size: 14px;color: #939BA9;line-height: 15px;margin-bottom: 30px;}
+		.sendCode_body .foot_btn .mui-btn{font-size: 14px;color: #FFFFFF;background: #C6CCD6;border-radius: 3px;width: 48%;height: 35px;border:none;float: left;}
+		.foot_btn .mui-btn.confirm{float: right;background: #1A92ED;}
+	</style>
+</head>
+<body style="background-color: #fff;">
+<header class="mui-bar mui-bar-nav pull-height">
+	<h1 class="mui-title">注册</h1>
+	<a href="登录.html" class="mui-icon mui-pull-right pull-size">登录</a>
+</header>
+<div class="mui-content">
+	<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+	<div class="mui-scroll">
+		<div class="mui-content pull-color pull-bj">
+			<div class="wx-logo"><img src="images/logo.png" alt=""></div>
+			<div class="login-gallery">
+				<ul class="login-gallery-list mui-clearfix">
+					<li><a href="#" class="on">个人注册</a></li>
+					<li><a href="#">企业注册</a></li>
+				</ul>
+			</div>
+			<div class="pwd-form">
+				<form class="mui-input-group">
+				<div class="mui-input-row pull-alert">
+					<label class="icon-phone"></label>
+					<input type="password" class="mui-input-clear" placeholder="输入手机号">
+				</div>
+				<div class="mui-input-row pull-code">
+					<label class="icon-VerifCode"></label>
+					<input type="password" class="mui-input-clear" placeholder="输入验证码">
+					<span class="verify-code">免费获取</span>
+				</div>
+				<div class="mui-input-row">
+					<label class="icon-login"></label>
+					<input type="password" class="mui-input-clear mui-input-password" placeholder="6~12位数字和字母">
+				</div>
+				</form>
+				<div class="user-exit-btn" id='toastBtn'><a href="个人的基本信息.html" class="button">注册</a></div>
+				<div class="for-pwd"><input class="deal-checkbox" name="checkbox" value="" type="checkbox" >我已并同意<a href="#" style="color: #1A92ED;">《万讯网工会加入协议》</a></div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+<!-- 发送验证码 -->
+<div class="sendCode">
+	<div class="sendCode_hide"></div>
+	<div class="sendCode_body">
+		<div class="form_input">
+			<div class="code"><img src="" alt=""></div>
+			<input type="text" class="input" placeholder="请输入验证码">
+			<p class="text">输入图片上的字符获取验证码</p>
+			<div class="foot_btn mui-clearfix">
+				<button class="mui-btn cancel">取消</button>
+				<button class="mui-btn confirm">确定</button>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script src="../js/mui.min.js"></script>
+<script src="js/jquery-1.7.1.min.js"></script>
+<script>
+	mui.init({
+		swipeBack: false
+	});
+	mui('#offCanvasSideScroll').scroll();
+
+	document.getElementById("toastBtn").addEventListener('tap', function() {
+		mui.toast('错误信息提示显示样式');
+	});
+
+	$(".verify-code").on("tap",function(){
+		$(".sendCode").fadeIn();
+	})
+	$(".sendCode").on("tap",".sendCode_body .mui-btn, .sendCode_hide",function(){
+		$(".sendCode").fadeOut();
+	})
+</script>
+</html>

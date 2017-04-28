@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>添加项目经验</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/connom.css" />
+	<link rel="stylesheet" type="text/css" href="css/resume.css" />
+	<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css" />
+</head>
+<body>
+<header class="mui-bar mui-bar-nav pull-height">
+	<a href="javascript:history.back(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<h1 class="mui-title">添加项目经验</h1>
+	<a href="完成简历.html" class="mui-icon mui-pull-right pull-size">保存</a>
+</header>
+<div class="mui-content">
+	<ul class="table-view-list">
+		<li class="table-view-cell mui-clearfix">
+			<label class="left-label">项目名称</label>
+			<input type="text" class="view-input" placeholder="请输入">
+		</li>
+		<li class="table-view-cell start pull-alert mui-clearfix" data-options='{"type":"month"}'>
+			<label class="left-label">开始时间</label>
+			<span class="start-time" id="result">请选择</span>
+			<!-- <input type="text" class="view-input" placeholder="请选择"> -->
+			<em class="icon-arrow"></em>
+		</li>
+		<li class="table-view-cell over pull-alert mui-clearfix" data-options='{"type":"month"}'>
+			<label class="left-label">结束时间</label>
+			<span class="start-time" id="result1">请选择</span>
+			<em class="icon-arrow"></em>
+		</li>
+		<li class="table-view-cell mui-clearfix">
+			<label>项目描述</label>
+			<textarea name="" id="" cols="10" rows="10" class="view-textarea" placeholder="请描述当前项目概况"></textarea>
+			<p class="text-size">0/200</p>
+		</li>
+	</ul>
+</div>
+<script src="../js/mui.min.js"></script>
+<script src="../js/mui.picker.min.js"></script>
+<script>
+	mui.init({
+		swipeBack: false
+	});
+</script>
+<script>
+	(function($) {
+		$.init();
+		var result = $('#result')[0];
+		var result1 = $('#result1')[0];
+
+		var btns = $('.table-view-cell.start');
+		var btno = $('.table-view-cell.over');
+		btns.each(function(i, btn) {
+		btn.addEventListener('tap', function() {
+		var optionsJson = this.getAttribute('data-options') || '{}';
+		var options = JSON.parse(optionsJson);
+		var id = this.getAttribute('id');
+		var picker = new $.DtPicker(options);
+			picker.show(function(rs) {
+				result.innerText = rs.text;
+				picker.dispose();
+			});
+		}, false);
+		});
+
+
+
+		btno.each(function(i, btn) {
+			btn.addEventListener('tap', function() {
+		var optionsJson = this.getAttribute('data-options') || '{}';
+		var options = JSON.parse(optionsJson);
+		var id = this.getAttribute('id');
+		var picker = new $.DtPicker(options);
+			picker.show(function(rs) {
+				result1.innerText = rs.text;
+				picker.dispose();
+			});
+		}, false);
+		});
+	})(mui);
+</script>
+</body>
+</html>

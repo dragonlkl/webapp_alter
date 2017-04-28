@@ -1,0 +1,495 @@
+.item-content-inner .cover-img img{
+	display: block;
+	width: 100%;
+	height:100%;
+}
+.item-content-inner .cover-img{
+	margin-bottom: 5px;
+}
+.ProeDucation{
+	text-align: left;
+}
+.ProeDucation .p-name{
+	font-size: 16px;
+	color: #2C3E4D;
+	padding-bottom: 5px;
+}
+.ProeDucation .p-price{
+	font-size: 14px;
+	line-height: 15px;
+	color: #27AB7F;
+}
+.ProeDucation .p-price .p-size{
+	font-size: 12px;
+	color: #939BA9;
+	float: right;
+}
+.item-content-inner .teach-icon-1{
+	background: url(../images/Training.png) no-repeat center center;
+}
+.item-content-inner .teach-icon-2{
+	background: url(../images/Course.png) no-repeat center center;
+}
+.item-content-inner .teach-icon-3{
+	background: url(../images/Public.png) no-repeat center center;
+}
+.item-content-inner .teach-icon-4{
+	background: url(../images/Research.png) no-repeat center center;
+}
+.item-content-inner .teach-icon{
+	background-size: 40px 40px;
+	width: 40px;
+	height: 40px;
+}
+.mui-table-view.mui-grid-view .mui-media-body.pull-top{
+	margin-top: 0;
+	font-size: 12px;
+	color: #2C3E4D;
+}
+.item-content-inner .ftit_inner{
+	background: url(../images/Rectangle.png) no-repeat center bottom;
+	background-size: 261px 17px;
+	padding-bottom: 15px;
+	margin-top: 10px;
+}
+.item-content-inner .title{
+	font-size: 14px;
+	color: #2C3E4D;
+	text-align: center;
+	background: url(../images/Recommended.png) no-repeat center top;
+	background-size: 25px;
+	padding-top: 30px;
+}
+
+/*岗前培训*/
+.mui-table-view.table-tab li{
+	font-size: 14px;
+	color: #939BA9;
+}
+.mui-table-view.table-tab .pull-teb-col{
+	color: #2C3E4D;
+}
+.item-content-inner.pull-position{
+	position: fixed;
+	top: 44px;
+	left: 0;
+	right: 0;
+	z-index: 9;
+}
+.item-content-inner.pull-50{
+	margin-top: 50px;
+}
+.item-content-inner.pull-50 .mui-table-view{
+	display: none;
+}
+.item-content-inner.pull-50 .mui-table-view:first-child{
+	display: block;
+}
+#topPopover {
+    position: fixed;
+    top: 16px;
+    right: 6px;
+}
+.mui-popover.popover-mobile{
+    height: 175px;
+    padding:10px;
+    width: 170px;
+    background-color: rgba(0,0,0,.7);
+}
+.mui-popover.popover-mobile .mui-popover-arrow:after{
+	background: #000;
+}
+.mui-popover.popover-mobile .nav-link li{
+	line-height: 40px;
+	font-size: 16px;
+	text-align: center;
+}
+.mui-popover.popover-mobile .nav-link li a{
+	color: #FFFFFF;
+}
+.Popover-arrow{
+	background: url(../images/ScreeningArrow.png) no-repeat center right;
+	background-size: 20px;
+	padding-right: 20px;
+}
+
+
+/*搜索模块*/
+.mui-input-row.pull-search{
+	margin-right: 50px;
+}
+.mui-input-row.pull-search .mui-input-clear{
+	height:32px;
+	background: #fff;
+}
+.mui-table-view.table-view-left .mui-table-view-cell:after{
+	left:0;
+}
+.table-view-left .mui-table-view-cell a em{
+	color: #1A92ED;
+}
+.notice-filter-noresult{
+	font-size: 14px;
+	color: #939BA9;
+	padding-top: 110px;
+	text-align: center;
+	display: block;
+	margin-top: 110px;
+	background: url(../images/NoSearch.png) no-repeat center top;
+	background-size: 150px 110px;
+}
+.item-content-inner .title-h2{
+	font-size: 16px;
+	color: #2C3E4D;
+	margin:0;
+	padding:15px;
+}
+.item-content-inner .ellipsis-inner{
+	font-size: 14px;
+	color: #939BA9;
+	padding:0 15px;
+	padding-bottom: 5px;
+}
+.item-content-inner.pull-video{
+	width:100%;
+    position:relative;
+    padding-top:70.5%;    /*需要用padding来维持16:9比例,也就是9除以16*/
+    height: 0;
+}
+.item-content-inner.pull-video video{
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+/*    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-size: cover;*/
+}
+.item-content-inner.pull-video .video_btn{
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	width: 60px;
+	height:60px;
+	margin-left: -30px;
+	margin-top: -30px;
+	background:#fff url(../images/Playlist.png) no-repeat center center;
+	border-radius: 60px;
+	opacity: 0.7;
+}
+.item-content-inner.pull-video .video_btn.action{
+	background:#fff url(../images/Playlist1.png) no-repeat center center;
+}
+
+.pull-Collection{
+	background: url(../images/Collection.png) no-repeat center center;
+	width: 26px;
+    height: 26px;
+    border-radius: 26px;
+    background-size: 26px;
+    margin-top: 9px;
+}
+.pull-Collection.action{
+	background:#fff url(../images/Collection1.png) no-repeat center center;
+	background-size: 26px;
+}
+.mui-bar .mui-icon.pull-icon-left{
+	background: #000;
+    width: 26px;
+    height: 26px;
+    border-radius: 26px;
+    margin-top: 9px;
+    color: #fff;
+    padding: 0;
+    opacity: 0.6;
+    line-height: 26px;
+    font-size: 18px;
+    text-align: center;
+}
+.ProeDucation.pull-add15{
+	padding:15px;
+}
+.ProeDucation.pull-add15 .p-price{
+	padding-top: 7px;
+}
+.ProeDucation.pull-add15 .p-price span{
+	font-size: 12px;
+	color: #939BA9;
+	margin-right: 15px;
+	display: inline-block;
+}
+.mui-navigate-right.pull-navigate{
+	height: 45px;
+    line-height: 28px;
+    font-size: 16px;
+    background: #fff;
+}
+.mui-navigate-right.pull-navigate i{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: #ddd;
+	margin-right: 10px;
+	border-radius: 10px;
+	vertical-align: 2px;
+}
+.mui-table-view.pull-play .icon-play{
+	background: url(../images/Playlist1.png) no-repeat 13px 15px;
+	background-size: 14px;
+}
+.mui-table-view.pull-play .icon-play em{
+	position: absolute;
+	top: 12px;
+    right: 15px;
+    font-size: 12px;
+    color: #939BA9;
+}
+.mui-table-view.pull-play .icon-play.action{
+	background: url(../images/Playlist.png) no-repeat 13px 15px;
+	background-size: 14px;
+	color: #1A92ED;
+}
+.mui-row.table-block-nav li{
+	float: left;
+	width: 20%;
+	line-height: 40px;
+	text-align: center;
+	font-size: 14px;
+}
+.mui-row.table-block-nav li a{
+	color: #939BA9;
+}
+.mui-row.table-block-nav li .pull-active{
+	font-size: 14px;
+	color: #2C3E4D;
+	border-bottom: 2px solid #1A92ED;
+	padding:0 5px 10px 5px;
+}
+.course-block-box .course-block{
+	display: none;
+}
+.course-block-box .course-block:last-child{
+	display: block;
+}
+.news-nav-footer.pull-course{
+	background: #1A92ED;
+}
+.news-nav-footer.pull-course .button{
+	background: #1A92ED;
+	padding:0;
+	margin: 0;
+}
+.link-share .course-tit{
+	text-align: center;
+	font-size: 16px;
+	color: #2C3E4D;
+	padding:10px;
+}
+.link-share .course-msg{
+	font-size: 14px;
+	color: #939BA9;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.link-share .button{
+	background: #1A92ED;
+	padding: 0;
+	margin:0;
+}
+.link-share .course-play{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.link-share .course-input{
+	margin-bottom: 0;
+	width: 200px;
+	height: 60px;
+	text-align: center;
+	font-size: 28px;
+	color: #FFB25D;
+	border-radius: 60px;
+}
+.link-share .course-list{
+	padding-bottom: 30px;
+}
+.link-share .course-list li{
+	line-height: 50px;
+	font-size: 14px;
+	padding: 0 15px;
+	color: #2C3E4D;
+	text-indent: 40px;
+	position: relative;
+}
+.link-share .course-list .WeChat{
+	background: url(../images/WeChat.png) no-repeat 15px 10px;
+	background-size: 30px;
+}
+.link-share .course-list .PayTreasure{
+	background: url(../images/PayTreasure.png) no-repeat 15px 10px;
+	background-size: 30px;
+}
+.link-share .course-list li .check{
+  	-webkit-appearance: none;
+ 	width: 18px;
+  	height: 18px;
+  	background: #FFF;
+  	border: solid 1px #d9d9d9;
+  	border-radius: 18px;
+  	display: block;
+  	margin:16px auto;
+  	float: right;
+}
+.link-share .course-list li .check:focus{
+    outline: 0 none;
+    outline-offset: -2px;
+}
+.link-share .course-list li .check:checked{
+    background: url(../images/selected.png) no-repeat;
+    background-size: 16px 16px;  
+    border: solid 1px #178FF2;
+}
+
+
+
+
+/*搜索图标*/
+.item-icom.mui-content>.mui-table-view:first-child{margin-top: 0;}
+.item-icom .icon_title{
+   	margin-top: 30px;
+   	margin-bottom: 0;
+   	font-size: 14px;
+   	color: #2C3E4D;
+   	text-align: center;
+}
+.item-icom .mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body{
+	font-size: 12px;
+	color: #2C3E4D;
+}
+.item-icom .mui-table-view-cell .mui-icon{
+	width: 70px;
+	height: 70px;
+}
+.item-icom .mui-table-view-cell .icon-new{
+	background: url(../images/NewsSearch.png) no-repeat center center;
+	background-size: 70px 70px;
+}
+.item-icom .mui-table-view-cell .icon-education{
+	background: url(../images/EducationSearch.png) no-repeat center center;
+	background-size: 70px 70px;
+}
+.item-icom .mui-table-view-cell .icon-obtain{
+	background: url(../images/EmploymentSearch.png) no-repeat center center;
+	background-size: 70px 70px;
+}
+.item-icom .mui-table-view-cell .icon-work{
+	background: url(../images/EntrepreneurshipSearch.png) no-repeat center center;
+	background-size: 70px 70px;
+}
+.item-icom .mui-table-view-cell .icon-trade{
+	background: url(../images/UnionSearch.png) no-repeat center center;
+	background-size: 70px 70px;
+}
+.item-icom .mui-table-view-cell .icon-xp{
+	background: url(../images/SchoolSpectrumSearch.png) no-repeat center center;
+	background-size: 70px 70px;
+}
+
+/*搜索新闻*/
+.item-news-inner.mui-content>.mui-table-view:first-child{margin-top: 0;}
+.item-news-inner .mui-table-view .mui-media-object{
+	max-width: 100px;
+	height: 75px;
+}
+.item-news-inner .mui-table-view .media_name{
+	height: 42px;
+	overflow: hidden;
+	font-size: 16px;
+	color: #2C3E4D;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical
+}
+.item-news-inner .mui-table-view .h6-ellipsis{
+	margin-top: 12px;
+	font-size: 12px;
+	color: #939BA9;
+}
+.item-news-inner .mui-table-view-cell>a:not(.mui-btn){
+	white-space:inherit;
+}
+.item-news-inner .mui-table-view-cell:after{left: 0;}
+
+
+/*就业搜索*/
+.item-obtain-inner .obtain_tag{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.item-obtain-inner .obtain_tag .title{
+	margin-top: 25px;
+	margin-bottom: 15px;
+	font-size: 12px;
+	color: #939BA9;
+}
+.item-obtain-inner .obtain_tag .listTag a{
+	display: inline-block;
+	line-height: 30px;
+	font-size: 12px;
+	color: #2C3E4D;
+	padding-left: 20px;
+	padding-right: 20px;
+	background: #fff;
+	margin-right: 10px;
+	margin-bottom: 15px;
+}
+.item-obtain-inner .obtain_tag .title.delMar{
+	margin-top: 10px;
+}
+.item-obtain-inner .obtain_tag .lists{
+	
+}
+.item-obtain-inner .obtain_tag .lists li{
+	margin-bottom: 10px;
+	background: #fff;
+	line-height: 35px;
+	padding-left: 10px;
+	padding-right: 10px;
+	position: relative;
+}
+.item-obtain-inner .obtain_tag .lists .dataTitle{
+	font-size: 12px;
+	color: #2C3E4D;
+}
+.item-obtain-inner .obtain_tag .lists .mui-icon-closeempty{
+	position: absolute;
+	top: 7px;
+	right: 5px;
+	color: #939BA9;
+}
+
+
+/*搜索公司*/
+.mui-slider-group.seek_item .item-view-cell .mui-icon-arrowright{
+	position: absolute;
+	top: 32px;
+	right: 5px;
+	color: #C6CCD6;
+}
+.mui-slider-group.seek_item .content-inner-box .text.pull-alter{
+	height: 23px;
+	overflow: hidden;
+}
+.mui-slider-group.seek_item .content-inner{
+	border-bottom: 1px solid #E9E9E9;
+}
+.content-inner.delFloat{
+	float: inherit;
+}

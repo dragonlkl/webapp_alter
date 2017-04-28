@@ -1,0 +1,101 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+ul li{
+	list-style: none;
+}
+.mui-off-canvas-left.pull-color{
+	background: #FFFFFF;
+}
+.mui-scroll .my-gear-info{
+	height: 75px;
+}
+.mui-scroll .my-gear-info .pull-border{
+	border: 1px solid #FFFFFF;
+	border-radius: 16px;
+	font-size:12px;
+	padding:5px 10px 2px 10px;
+	margin-top: 25px;
+	margin-right: 25px;
+}
+.mui-icon-gear{
+	margin-left: 20px;
+	margin-top: 25px;
+	font-size: 25px;
+}
+.mui-scroll .my-gear-info a{
+	color: #FFFFFF;
+}
+.mui-scroll .my-user-header{
+	background:url(../images/personalbg.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+.my-head-img .my-img{
+	display: block;
+	width: 65px;
+	height: 65px;
+	border:2px solid #FFFFFF;
+	border-radius: 65px;
+	margin:0 auto;
+	position: relative;
+}
+.my-head-img .my-img img{
+	display: block;
+	width: 100%;
+	border-radius: 65px;
+}
+.my-person-info{
+	text-align: center;
+	font-size: 16px;
+	color: #FFFFFF;
+	padding-top:10px;
+	padding-bottom: 35px;
+}
+.my-content .in-list li{
+	line-height: 45px;
+	font-size: 16px;
+	color: #2C3E4D;
+	margin-left: 20px;
+}
+.my-content .in-list li a{
+	color: #2C3E4D;
+	display: block;
+	text-indent: 35px;
+}
+.my-content .in-list .pull-border{
+	border-bottom:1px solid  #E9E9E9;
+}
+.my-content .in-list .icon-fk{
+	background: url(../images/icon-fk.png) no-repeat left center;
+}
+.my-content .in-list .icon-xm{
+	background: url(../images/icon-xm.png) no-repeat left center;
+}
+.my-content .in-list .icon-sc{
+	background: url(../images/icon-sc.png) no-repeat left center;
+}
+.my-content .in-list .icon-kc{
+	background: url(../images/icon-kc.png) no-repeat left center;
+}
+.my-content .in-list .icon-jl{
+	background: url(../images/icon-jl.png) no-repeat left center;
+}
+.my-content .in-list .icon-zw{
+	background: url(../images/icon-zw.png) no-repeat left center;
+}
+.my-content .in-list .icon-yt{
+	background: url(../images/icon-yt.png) no-repeat left center;
+}
+.my-content .in-list .icon-xx{
+	background: url(../images/icon-xx.png) no-repeat left center;
+}
+.my-content .in-list .icon-size{
+	background-size: 25px 25px;
+}
+#pp{
+	position: fixed;
+	top: 0;
+	left:0;
+	z-index: 999999;
+}

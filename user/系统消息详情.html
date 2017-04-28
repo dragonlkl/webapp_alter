@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>消息详情</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/connom.css" />
+	<style>
+		.mui-scroll-wrapper{top: 44px;}
+		.mui-content.pull-color{padding:20px 15px;background-color: #fff;}
+		.mui-content.pull-color .back-title{font-size: 20px;color: #2C3E4D;font-weight: 500;margin: 0;}
+		.mui-content.pull-color .back-time{font-size: 13px;color: #939BA9;padding-top: 10px;}
+		.mui-content.pull-color .back-text{font-size: 13px;color: #939BA9;font-size: 16px;color: #2C3E4D;line-height: 24px;text-indent: 30px;}
+	</style>
+</head>
+<body style="background-color: #fff;">
+<header class="mui-bar mui-bar-nav pull-height">
+	<a href="javascript:history.back(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<h1 class="mui-title">消息详情</h1>
+</header>
+<div class="mui-content">
+	<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+	<div class="mui-scroll">
+		<div class="mui-content pull-color">
+			<h2 class="back-title">股权投资公司半年报披露公告</h2>
+			<p class="back-time">09-30  12:58</p>
+			<div class="back-text">
+				<p>融资成功后，项目在每年5月底、11月底前完成交割的，分别在当年的8月和次年3月份完成第一次信息披露，之后融资方应当按照以下规定，向投资人提供如下文件信息：</p>
+				<p>（1）每半个会计年度结束后的60天内，提交该半年度内公司未经审计的财务报表及企业管理报表；</p>
+				<p>（2）每个会计年度结束后的120天内，提交该会计年度内公司未经审计的财务报表及企业管理报表；</p>
+				<p>（3）向公司任何其他股东提供的所有文件及其他资料的复印件；</p>
+				<p>（4）与投资人签署的投资协议或股权转让协议中要求提供的其他文件和信息（如投资协议或股权转让协议与本制度的规定存在不一致，以前者为准）。</p>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+</body>
+<script src="../js/mui.min.js"></script>
+<script>
+	mui.init({
+		swipeBack: false
+	});
+	mui('#offCanvasSideScroll').scroll();
+</script>
+</html>

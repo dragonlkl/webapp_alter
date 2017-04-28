@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>修改密码</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/connom.css" />
+	<style>
+		.mui-scroll-wrapper{top: 44px;}
+		.mui-content.pull-color{background: #fff;padding: 15px;}
+		.mui-content.pull-color .wx-logo{width: 110px;height: 50px;margin: 20px auto;}
+		.mui-content.pull-color .wx-logo img{display:block;width: 110px;height: 50px;}
+		.pwd-form{padding-top: 30px;margin: 0 30px;}
+		.pwd-form .mui-input-row .mui-input-clear~.mui-icon-clear{right: 30px;}
+		.pwd-form .mui-input-group .mui-input-row{height: 50px;}
+		.mui-input-row .mui-input-clear{height: 49px;width: 86%;margin-top: 3px;}
+		.mui-input-row{height: 49px;line-height: 49px;}
+		.pwd-form .icon-login{background: url(images/Login.png) no-repeat center center;background-size: 20px 20px;width: 10%;height: 50px;}
+		.mui-input-group .mui-icon{line-height: 32px;}
+		.mui-input-group:before{background: none;}
+		.mui-input-group .mui-input-row:after{left: 0;}
+		.user-exit-btn{margin-top: 30px;}
+		.user-exit-btn .button{display: block;width: 100%;background: #C6CCD6;border-radius: 3px;color: #fff;line-height: 50px;text-align: center;}
+		.mui-toast-container{bottom: 200px;}
+		.mui-toast-message{background-color: #000;color: #fff;opacity: 0.7;line-height: 40px;font-size: 14px;}
+		.mui-toast-container.mui-active{bottom: 200px;}
+	</style>
+</head>
+<body style="background-color: #fff;">
+<header class="mui-bar mui-bar-nav pull-height">
+	<a href="javascript:history.back(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<h1 class="mui-title">修改密码</h1>
+</header>
+<div class="mui-content">
+	<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+	<div class="mui-scroll">
+		<div class="mui-content pull-color">
+			<div class="wx-logo"><img src="images/logo.png" alt=""></div>
+			<div class="pwd-form">
+				<form class="mui-input-group">
+				<div class="mui-input-row">
+					<label class="icon-login"></label>
+					<input type="password" class="mui-input-clear mui-input-password" placeholder="旧密码">
+				</div>
+				<div class="mui-input-row">
+					<label class="icon-login"></label>
+					<input type="password" class="mui-input-clear mui-input-password" placeholder="设置新密码">
+				</div>
+				</form>
+				<div class="user-exit-btn" id='toastBtn'><a href="#" class="button">确定</a></div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+</body>
+<script src="../js/mui.min.js"></script>
+<script>
+	mui.init({
+		swipeBack: false
+	});
+	mui('#offCanvasSideScroll').scroll();
+
+	document.getElementById("toastBtn").addEventListener('tap', function() {
+		mui.toast('错误信息提示显示样式');
+	});
+</script>
+</html>

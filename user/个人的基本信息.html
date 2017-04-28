@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>基本信息</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/connom.css" />
+	<link rel="stylesheet" type="text/css" href="css/user.css" />
+	<link href="../css/mui.picker.css" rel="stylesheet" />
+	<link href="../css/mui.poppicker.css" rel="stylesheet" />
+	<style>
+		.mui-picker{background: #fff;}
+		.mui-poppicker-body{height: 155px;}
+		.mui-btn.mui-poppicker-btn-cancel{color: #939BA9;}
+		.mui-btn.mui-btn-blue.mui-poppicker-btn-ok{color: #2C3E4D;}
+		.mui-poppicker-header{background: #fff;border-bottom: 1px solid #E9E9E9;}
+		.mui-poppicker-header .mui-btn{border: none;background: none;}
+	</style>
+</head>
+<body style="background-color: #fff;">
+<header class="mui-bar mui-bar-nav pull-height">
+	<h1 class="mui-title">基本信息</h1>
+</header>
+<div class="mui-content">
+	<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+	<div class="mui-scroll">
+		<div class="mui-content pull-color pull-bj">
+			<div class="user-pic-upload">
+				<img src="images/Upload.png" alt="">
+				<span>上传头像</span>
+				<input type="file" class="pic">
+			</div>
+			<div class="pwd-form">
+				<form class="mui-input-group">
+				<div class="mui-input-row pull-alert">
+					<label class="pull-height">姓名</label>
+					<input class="text" type="text" placeholder="请填写">
+				</div>
+				<div class="mui-input-row pull-alert" id="showUserPicker">
+					<label class="pull-height">性别</label>
+					<div class="date-sex" id="userResult">请选择</div>
+					<!-- <input class="text" type="text" id="showUserPicker" placeholder="请选择"> -->
+					<em class="icon-select"></em>
+				</div>
+				<div class="mui-input-row pull-alert" id="showUserPicker1">
+					<label class="pull-height">年龄</label>
+					<div class="date-sex" id="userResult1">请选择</div>
+					<em class="icon-select"></em>
+				</div>
+				<div class="mui-input-row pull-alert">
+				<a href="学校列表.html">
+					<label class="pull-height">学校</label>
+					<input class="text" type="text" placeholder="请选择">
+					<em class="icon-select"></em>
+				</a>
+				</div>
+				</form>
+				<div class="user-exit-btn" id='toastBtn'><a href="#" class="button">下一步</a></div>
+				<div class="user-exit-btn pull-color" id='toastBtn'><a href="我的简历.html" class="button">下一步</a></div>
+				
+				<div id='result'></div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+</body>
+<script src="../js/mui.min.js"></script>
+<script src="../js/mui.picker.js"></script>
+<script src="../js/mui.poppicker.js"></script>
+<script>
+	mui.init({
+		swipeBack: false
+	});
+	mui('#offCanvasSideScroll').scroll();
+
+	document.getElementById("toastBtn").addEventListener('tap', function() {
+		mui.toast('错误信息提示显示样式');
+	});
+</script>
+<script>
+(function($, doc) {
+	$.ready(function() {
+		var userPicker = new $.PopPicker();
+			userPicker.setData([{
+				value: 'ywj',
+				text: '男'
+			}, {
+				value: 'aaa',
+				text: '女'
+			}]);
+			var showUserPickerButton = doc.getElementById('showUserPicker');
+			var userResult = doc.getElementById('userResult');
+			showUserPickerButton.addEventListener('tap', function(event) {
+			userPicker.show(function(items) {
+			//userResult.innerText = JSON.stringify(items[0]);
+			userResult.innerText = items[0].text;
+			});
+		}, false);
+
+
+		var userPicker1 = new $.PopPicker();
+			userPicker1.setData([{
+				value: '',
+				text: '1990年'
+			}, {
+				value: '',
+				text: '1991年'
+			}, {
+				value: '',
+				text: '1992年'
+			}, {
+				value: '',
+				text: '1993年'
+			}]);
+			var showUserPickerButton1 = doc.getElementById('showUserPicker1');
+			var userResult1 = doc.getElementById('userResult1');
+			showUserPickerButton1.addEventListener('tap', function(event) {
+			userPicker1.show(function(items) {
+			//userResult.innerText = JSON.stringify(items[0]);
+			userResult1.innerText = items[0].text;
+			});
+		}, false);
+	});
+})(mui, document);
+</script>
+</html>
